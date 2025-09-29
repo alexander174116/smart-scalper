@@ -12,7 +12,7 @@ API_KEY=KEY_HERE
 API_SECRET=KEY_HERE
 
 Запуск:
-python btc_scalper_bot.py
+python main.py
 
 Настройки
 Режимы: paper (тест) / live (реальная торговля)
