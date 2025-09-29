@@ -1,0 +1,56 @@
+# Scalper PRO против толпы
+mode: paper              #paper or live
+exchange_id: bybit
+
+# Мультимонетный мониторинг
+symbols:
+  - MYX/USDT:USDT
+  - XPL/USDT:USDT  
+  - ASTER/USDT:USDT
+  - HYPE/USDT:USDT
+  - ETH/USDT:USDT
+
+timeframe: 1m
+
+# Капитал и риск
+initial_equity: 200.0
+active_capital_pct: 1.0    # 100% капитала доступно для торговли
+leverage: 3                # Плечо
+risk_per_trade_pct: 0.01   # 1% риска на сделку ($2)
+initial_stop_pct: 0.008    # 0.8% стоп-лосс
+position_multiplier: 10 
+
+# ДОБАВЬ ЭТИ ДВА ПАРАМЕТРА:
+profit_target_pct: 0.015   # 1.5% активация трейлинга
+min_profit_pct: 0.010      # 1.0% минимальная прибыль
+
+# Трейлинг-стоп
+trailing_start: 0.015      # 1.5% - начинаем трейлить
+trailing_step: 0.003       # 0.3% - шаг подтягивания
+trailing_lock_pct: 0.006   # 0.6% - гарантированная прибыль
+
+# ОПТИМИЗИРОВАННЫЕ НАСТРОЙКИ ДЛЯ 1М:
+rsi_period: 14            # стандартный период
+rsi_overbought: 65        # БОЛЕЕ ЧУВСТВИТЕЛЬНЫЙ!
+rsi_oversold: 35          # БОЛЕЕ ЧУВСТВИТЕЛЬНЫЙ!
+volume_multiplier: 1.5    # фильтр объема
+
+# Улучшенная стратегия входа
+entry_strategy: "smart_momentum"
+multi_timeframe: true     # отключим для скорости
+tf_primary: 1m
+tf_confirmation: 5m
+min_volume_ratio: 1.3     # менее строгий фильтр
+max_volatility: 0.05      # более волатильные рынки
+trend_filter: true       # отключим для больше сигналов
+
+# Лимиты
+max_open_trades: 10         # Макс 3 сделки
+trades_per_symbol: 2       # 1 сделка на символ
+trade_cooldown_sec: 5     # 10 секунд между сделками
+max_daily_loss_pct: 0.15   # % максимальный дневной убыток
+
+# Логирование
+log_trades: true
+log_file: "trades_log.csv"
+verbose: true

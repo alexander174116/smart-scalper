@@ -1,0 +1,1008 @@
+(venv) sashokk@DESKTOP-9TFS44J:~/bot$ python main.py
+2025-09-28 23:58:50,387 INFO: Config loaded: Config(mode='paper', exchange_id='bybit', symbols=['MYX/USDT:USDT', 'XPL/USDT:USDT', 'ASTER/USDT:USDT', 'HYPE/USDT:USDT', 'ETH/USDT:USDT'], timeframe='1m', initial_equity=200.0, active_capital_pct=1.0, leverage=3, risk_per_trade_pct=0.01, initial_stop_pct=0.008, profit_target_pct=0.015, min_profit_pct=0.01, trailing_start=0.015, trailing_step=0.003, trailing_lock_pct=0.006, rsi_period=14, rsi_overbought=65, rsi_oversold=35, volume_multiplier=1.5, max_open_trades=10, trades_per_symbol=2, trade_cooldown_sec=5, max_daily_loss_pct=0.15, log_trades=True, log_file='trades_log.csv', verbose=True, entry_strategy='smart_momentum', multi_timeframe=True, tf_primary='1m', tf_confirmation='5m', min_volume_ratio=1.3, max_volatility=0.05, trend_filter=True, position_multiplier=10)
+2025-09-28 23:58:50,387 INFO: 🚀 Starting SMART SCALPER PRO (Anti-Crowd) | 5 symbols
+2025-09-28 23:58:50,387 INFO: Strategy: smart_momentum | RSI 14 | Stop: 0.8% | Trail: 1.5%
+💰 SCALPER CALC:
+   Equity: $200.0 | Risk: $2.0
+   Position: $60.0 | Stop: 3.3%
+   Qty: 1.276732
+2025-09-29 00:11:25,674 INFO:    📊 Current price for HYPE/USDT:USDT: $46.973000
+2025-09-29 00:11:28,442 INFO:    🔧 Quantity: 1.276732 → 1.300000 (step: 0.1)
+2025-09-29 00:11:28,442 INFO:    💰 Notional: $61.06 | Min: $10
+2025-09-29 00:11:28,442 INFO: [PAPER] SHORT 1.300000 HYPE/USDT:USDT @ 46.994000
+2025-09-29 00:11:28,442 INFO: 🎯 ENTRY SHORT HYPE/USDT:USDT
+2025-09-29 00:11:28,442 INFO:    💰 Size: $60.00 | Risk: $0.48
+2025-09-29 00:11:28,442 INFO:    🎯 Entry: $46.995000 | Stop: 3.33%
+2025-09-29 00:11:28,442 INFO:    📈 Reason: 1m Reversal Short: RSI 75.1 + 2 red candles
+💰 SCALPER CALC:
+   Equity: $200.0 | Risk: $2.0
+   Position: $60.0 | Stop: 3.3%
+   Qty: 1.276976
+2025-09-29 00:11:58,853 INFO:    📊 Current price for HYPE/USDT:USDT: $46.961000
+2025-09-29 00:12:01,637 INFO:    🔧 Quantity: 1.276976 → 1.300000 (step: 0.1)
+2025-09-29 00:12:01,637 INFO:    💰 Notional: $61.03 | Min: $10
+2025-09-29 00:12:01,637 INFO: [PAPER] SHORT 1.300000 HYPE/USDT:USDT @ 46.962000
+2025-09-29 00:12:01,637 INFO: 🎯 ENTRY SHORT HYPE/USDT:USDT
+2025-09-29 00:12:01,637 INFO:    💰 Size: $60.00 | Risk: $0.48
+2025-09-29 00:12:01,637 INFO:    🎯 Entry: $46.986000 | Stop: 3.33%
+2025-09-29 00:12:01,637 INFO:    📈 Reason: 1m Reversal Short: RSI 70.3 + 2 red candles
+💰 SCALPER CALC:
+   Equity: $200.0 | Risk: $2.0
+   Position: $60.0 | Stop: 3.3%
+   Qty: 0.014789
+2025-09-29 00:12:39,965 INFO:    📊 Current price for ETH/USDT:USDT: $4057.000000
+2025-09-29 00:12:42,729 INFO:    🔧 Quantity: 0.014789 → 0.015000 (step: 0.001)
+2025-09-29 00:12:42,729 INFO:    💰 Notional: $60.85 | Min: $10
+2025-09-29 00:12:42,730 INFO: [PAPER] SHORT 0.015000 ETH/USDT:USDT @ 4057.000000
+2025-09-29 00:12:42,730 INFO: 🎯 ENTRY SHORT ETH/USDT:USDT
+2025-09-29 00:12:42,730 INFO:    💰 Size: $60.00 | Risk: $0.48
+2025-09-29 00:12:42,730 INFO:    🎯 Entry: $4057.050000 | Stop: 3.33%
+2025-09-29 00:12:42,730 INFO:    📈 Reason: 1m Reversal Short: RSI 71.6 + 2 red candles
+💰 SCALPER CALC:
+   Equity: $200.0 | Risk: $2.0
+   Position: $60.0 | Stop: 3.3%
+   Qty: 0.014792
+2025-09-29 00:14:02,888 INFO:    📊 Current price for ETH/USDT:USDT: $4054.500000
+2025-09-29 00:14:05,422 INFO:    🔧 Quantity: 0.014792 → 0.015000 (step: 0.001)
+2025-09-29 00:14:05,422 INFO:    💰 Notional: $60.82 | Min: $10
+2025-09-29 00:14:05,422 INFO: [PAPER] SHORT 0.015000 ETH/USDT:USDT @ 4056.360000
+2025-09-29 00:14:05,422 INFO: 🎯 ENTRY SHORT ETH/USDT:USDT
+2025-09-29 00:14:05,422 INFO:    💰 Size: $60.00 | Risk: $0.48
+2025-09-29 00:14:05,422 INFO:    🎯 Entry: $4056.350000 | Stop: 3.33%
+2025-09-29 00:14:05,422 INFO:    📈 Reason: 1m Reversal Short: RSI 75.0 + 2 red candles
+💰 SCALPER CALC:
+   Equity: $200.0 | Risk: $2.0
+   Position: $60.0 | Stop: 3.3%
+   Qty: 42.507970
+2025-09-29 00:29:04,554 INFO:    📊 Current price for XPL/USDT:USDT: $1.410500
+2025-09-29 00:29:10,950 INFO:    🔧 Quantity: 42.507970 → 43.000000 (step: 1.0)
+2025-09-29 00:29:10,950 INFO:    💰 Notional: $60.60 | Min: $10
+2025-09-29 00:29:10,950 INFO: [PAPER] LONG 43.000000 XPL/USDT:USDT @ 1.410500
+2025-09-29 00:29:10,950 INFO: 🎯 ENTRY LONG XPL/USDT:USDT
+2025-09-29 00:29:10,950 INFO:    💰 Size: $60.00 | Risk: $0.48
+2025-09-29 00:29:10,950 INFO:    🎯 Entry: $1.411500 | Stop: 3.33%
+2025-09-29 00:29:10,950 INFO:    📈 Reason: 1m Reversal Long: RSI 18.7 + 2 green candles
+💰 SCALPER CALC:
+   Equity: $200.0 | Risk: $2.0
+   Position: $60.0 | Stop: 3.3%
+   Qty: 42.429814
+2025-09-29 00:30:30,800 INFO:    📊 Current price for XPL/USDT:USDT: $1.418100
+2025-09-29 00:30:33,555 INFO:    🔧 Quantity: 42.429814 → 42.000000 (step: 1.0)
+2025-09-29 00:30:33,555 INFO:    💰 Notional: $59.57 | Min: $10
+2025-09-29 00:30:33,555 INFO: [PAPER] LONG 42.000000 XPL/USDT:USDT @ 1.414300
+2025-09-29 00:30:33,555 INFO: 🎯 ENTRY LONG XPL/USDT:USDT
+2025-09-29 00:30:33,555 INFO:    💰 Size: $60.00 | Risk: $0.48
+2025-09-29 00:30:33,555 INFO:    🎯 Entry: $1.414100 | Stop: 3.33%
+2025-09-29 00:30:33,555 INFO:    📈 Reason: 1m Reversal Long: RSI 31.6 + 2 green candles
+2025-09-29 00:43:21,535 INFO: 🚀 Trailing activated for HYPE/USDT:USDT @ 1.50%
+2025-09-29 00:45:46,852 INFO: 🔴 CLOSE XPL/USDT:USDT long: initial_stop, PnL: $-0.54 (-0.89%)
+2025-09-29 00:45:49,510 INFO: 🔴 CLOSE XPL/USDT:USDT long: initial_stop, PnL: $-0.74 (-1.25%)
+💰 SCALPER CALC:
+   Equity: $198.71910000000003 | Risk: $1.9871910000000004
+   Position: $59.61573000000001 | Stop: 3.3%
+   Qty: 42.867426
+2025-09-29 00:52:48,103 INFO:    📊 Current price for XPL/USDT:USDT: $1.390600
+2025-09-29 00:52:50,921 INFO:    🔧 Quantity: 42.867426 → 43.000000 (step: 1.0)
+2025-09-29 00:52:50,921 INFO:    💰 Notional: $59.80 | Min: $10
+2025-09-29 00:52:50,922 INFO: [PAPER] LONG 43.000000 XPL/USDT:USDT @ 1.390600
+2025-09-29 00:52:50,922 INFO: 🎯 ENTRY LONG XPL/USDT:USDT
+2025-09-29 00:52:50,922 INFO:    💰 Size: $59.62 | Risk: $0.48
+2025-09-29 00:52:50,922 INFO:    🎯 Entry: $1.390700 | Stop: 3.33%
+2025-09-29 00:52:50,922 INFO:    📈 Reason: 1m Reversal Long: RSI 27.8 + 2 green candles
+💰 SCALPER CALC:
+   Equity: $198.71910000000003 | Risk: $1.9871910000000004
+   Position: $59.61573000000001 | Stop: 3.3%
+   Qty: 42.747548
+2025-09-29 00:53:38,031 INFO:    📊 Current price for XPL/USDT:USDT: $1.394600
+2025-09-29 00:53:42,427 INFO:    🔧 Quantity: 42.747548 → 43.000000 (step: 1.0)
+2025-09-29 00:53:42,427 INFO:    💰 Notional: $59.92 | Min: $10
+2025-09-29 00:53:42,428 INFO: [PAPER] LONG 43.000000 XPL/USDT:USDT @ 1.394400
+2025-09-29 00:53:42,428 INFO: 🎯 ENTRY LONG XPL/USDT:USDT
+2025-09-29 00:53:42,428 INFO:    💰 Size: $59.62 | Risk: $0.48
+2025-09-29 00:53:42,428 INFO:    🎯 Entry: $1.394600 | Stop: 3.33%
+2025-09-29 00:53:42,428 INFO:    📈 Reason: 1m Reversal Long: RSI 30.2 + 2 green candles
+2025-09-29 00:53:50,170 INFO: 🚀 Trailing activated for HYPE/USDT:USDT @ 1.59%
+2025-09-29 00:59:03,778 INFO: 🔴 CLOSE HYPE/USDT:USDT short: trailing_stop, PnL: $0.69 (1.13%)
+2025-09-29 00:59:06,417 INFO: 🔴 CLOSE HYPE/USDT:USDT short: trailing_stop, PnL: $0.66 (1.08%)
+2025-09-29 01:05:36,119 INFO: 🚀 Trailing activated for XPL/USDT:USDT @ 1.50%
+2025-09-29 01:06:03,685 INFO: 🚀 Trailing activated for XPL/USDT:USDT @ 1.95%
+2025-09-29 01:06:23,974 INFO: 🔴 CLOSE ETH/USDT:USDT short: initial_stop, PnL: $-0.50 (-0.83%)
+2025-09-29 01:06:52,339 INFO: 🔴 CLOSE ETH/USDT:USDT short: initial_stop, PnL: $-0.75 (-1.24%)
+💰 SCALPER CALC:
+   Equity: $198.8137 | Risk: $1.9881370000000003
+   Position: $59.64411000000001 | Stop: 3.3%
+   Qty: 1.271946
+2025-09-29 01:08:13,116 INFO:    📊 Current price for HYPE/USDT:USDT: $46.940000
+2025-09-29 01:08:17,028 INFO:    🔧 Quantity: 1.271946 → 1.300000 (step: 0.1)
+2025-09-29 01:08:17,029 INFO:    💰 Notional: $61.00 | Min: $10
+2025-09-29 01:08:17,029 INFO: [PAPER] SHORT 1.300000 HYPE/USDT:USDT @ 46.920000
+2025-09-29 01:08:17,029 INFO: 🎯 ENTRY SHORT HYPE/USDT:USDT
+2025-09-29 01:08:17,029 INFO:    💰 Size: $59.64 | Risk: $0.48
+2025-09-29 01:08:17,029 INFO:    🎯 Entry: $46.892000 | Stop: 3.33%
+2025-09-29 01:08:17,029 INFO:    📈 Reason: 1m Reversal Short: RSI 77.1 + 2 red candles
+💰 SCALPER CALC:
+   Equity: $198.8137 | Risk: $1.9881370000000003
+   Position: $59.64411000000001 | Stop: 3.3%
+   Qty: 1.272598
+2025-09-29 01:10:47,634 INFO:    📊 Current price for HYPE/USDT:USDT: $46.951000
+2025-09-29 01:10:50,286 INFO:    🔧 Quantity: 1.272598 → 1.300000 (step: 0.1)
+2025-09-29 01:10:50,286 INFO:    💰 Notional: $61.08 | Min: $10
+2025-09-29 01:10:50,286 INFO: [PAPER] SHORT 1.300000 HYPE/USDT:USDT @ 46.894000
+2025-09-29 01:10:50,286 INFO: 🎯 ENTRY SHORT HYPE/USDT:USDT
+2025-09-29 01:10:50,286 INFO:    💰 Size: $59.64 | Risk: $0.48
+2025-09-29 01:10:50,286 INFO:    🎯 Entry: $46.868000 | Stop: 3.33%
+2025-09-29 01:10:50,286 INFO:    📈 Reason: 1m Reversal Short: RSI 73.9 + 2 red candles
+2025-09-29 01:11:01,350 INFO: 🔴 CLOSE XPL/USDT:USDT long: trailing_stop, PnL: $1.10 (1.84%)
+💰 SCALPER CALC:
+   Equity: $199.9145 | Risk: $1.9991450000000002
+   Position: $59.97435 | Stop: 3.3%
+   Qty: 0.014654
+2025-09-29 01:11:30,602 INFO:    📊 Current price for ETH/USDT:USDT: $4091.760000
+2025-09-29 01:11:33,273 INFO:    🔧 Quantity: 0.014654 → 0.015000 (step: 0.001)
+2025-09-29 01:11:33,273 INFO:    💰 Notional: $61.35 | Min: $10
+2025-09-29 01:11:33,273 INFO: [PAPER] SHORT 0.015000 ETH/USDT:USDT @ 4091.120000
+2025-09-29 01:11:33,273 INFO: 🎯 ENTRY SHORT ETH/USDT:USDT
+2025-09-29 01:11:33,273 INFO:    💰 Size: $59.97 | Risk: $0.48
+2025-09-29 01:11:33,273 INFO:    🎯 Entry: $4092.640000 | Stop: 3.33%
+2025-09-29 01:11:33,273 INFO:    📈 Reason: 1m Reversal Short: RSI 73.7 + 2 red candles
+2025-09-29 01:11:40,923 INFO: 🔴 CLOSE XPL/USDT:USDT long: trailing_stop, PnL: $1.14 (1.91%)
+💰 SCALPER CALC:
+   Equity: $201.054 | Risk: $2.01054
+   Position: $60.3162 | Stop: 3.3%
+   Qty: 0.014750
+2025-09-29 01:12:12,751 INFO:    📊 Current price for ETH/USDT:USDT: $4089.760000
+2025-09-29 01:12:15,917 INFO:    🔧 Quantity: 0.014750 → 0.015000 (step: 0.001)
+2025-09-29 01:12:15,917 INFO:    💰 Notional: $61.33 | Min: $10
+2025-09-29 01:12:15,917 INFO: [PAPER] SHORT 0.015000 ETH/USDT:USDT @ 4089.090000
+2025-09-29 01:12:15,917 INFO: 🎯 ENTRY SHORT ETH/USDT:USDT
+2025-09-29 01:12:15,917 INFO:    💰 Size: $60.32 | Risk: $0.48
+2025-09-29 01:12:15,917 INFO:    🎯 Entry: $4089.370000 | Stop: 3.33%
+2025-09-29 01:12:15,917 INFO:    📈 Reason: 1m Reversal Short: RSI 71.7 + 2 red candles
+💰 SCALPER CALC:
+   Equity: $201.054 | Risk: $2.01054
+   Position: $60.3162 | Stop: 3.3%
+   Qty: 42.587164
+2025-09-29 01:13:21,962 INFO:    📊 Current price for XPL/USDT:USDT: $1.418000
+2025-09-29 01:13:25,316 INFO:    🔧 Quantity: 42.587164 → 43.000000 (step: 1.0)
+2025-09-29 01:13:25,316 INFO:    💰 Notional: $60.93 | Min: $10
+2025-09-29 01:13:25,317 INFO: [PAPER] SHORT 43.000000 XPL/USDT:USDT @ 1.416800
+2025-09-29 01:13:25,317 INFO: 🎯 ENTRY SHORT XPL/USDT:USDT
+2025-09-29 01:13:25,317 INFO:    💰 Size: $60.32 | Risk: $0.48
+2025-09-29 01:13:25,317 INFO:    🎯 Entry: $1.416300 | Stop: 3.33%
+2025-09-29 01:13:25,317 INFO:    📈 Reason: 1m Reversal Short: RSI 76.4 + 2 red candles
+2025-09-29 01:17:00,971 INFO: 🔴 CLOSE XPL/USDT:USDT short: initial_stop, PnL: $-0.50 (-0.83%)
+💰 SCALPER CALC:
+   Equity: $200.5509 | Risk: $2.005509
+   Position: $60.16527 | Stop: 3.3%
+   Qty: 41.107728
+2025-09-29 01:27:22,565 INFO:    📊 Current price for XPL/USDT:USDT: $1.464800
+2025-09-29 01:27:27,464 INFO:    🔧 Quantity: 41.107728 → 41.000000 (step: 1.0)
+2025-09-29 01:27:27,465 INFO:    💰 Notional: $60.13 | Min: $10
+2025-09-29 01:27:27,465 INFO: [PAPER] SHORT 41.000000 XPL/USDT:USDT @ 1.464400
+2025-09-29 01:27:27,465 INFO: 🎯 ENTRY SHORT XPL/USDT:USDT
+2025-09-29 01:27:27,465 INFO:    💰 Size: $60.17 | Risk: $0.48
+2025-09-29 01:27:27,465 INFO:    🎯 Entry: $1.463600 | Stop: 3.33%
+2025-09-29 01:27:27,465 INFO:    📈 Reason: 1m Reversal Short: RSI 79.2 + 2 red candles
+💰 SCALPER CALC:
+   Equity: $200.5509 | Risk: $2.005509
+   Position: $60.16527 | Stop: 3.3%
+   Qty: 41.217558
+2025-09-29 01:28:08,552 INFO:    📊 Current price for XPL/USDT:USDT: $1.458100
+2025-09-29 01:28:10,998 INFO:    🔧 Quantity: 41.217558 → 41.000000 (step: 1.0)
+2025-09-29 01:28:10,998 INFO:    💰 Notional: $59.86 | Min: $10
+2025-09-29 01:28:10,998 INFO: [PAPER] SHORT 41.000000 XPL/USDT:USDT @ 1.459100
+2025-09-29 01:28:10,998 INFO: 🎯 ENTRY SHORT XPL/USDT:USDT
+2025-09-29 01:28:10,998 INFO:    💰 Size: $60.17 | Risk: $0.48
+2025-09-29 01:28:10,998 INFO:    🎯 Entry: $1.459700 | Stop: 3.33%
+2025-09-29 01:28:10,998 INFO:    📈 Reason: 1m Reversal Short: RSI 80.7 + 2 red candles
+💰 SCALPER CALC:
+   Equity: $200.5509 | Risk: $2.005509
+   Position: $60.16527 | Stop: 3.3%
+   Qty: 31.624321
+2025-09-29 01:31:37,140 INFO:    📊 Current price for ASTER/USDT:USDT: $1.903800
+2025-09-29 01:31:39,620 INFO:    🔧 Quantity: 31.624321 → 32.000000 (step: 1.0)
+2025-09-29 01:31:39,621 INFO:    💰 Notional: $60.91 | Min: $10
+2025-09-29 01:31:39,621 INFO: [PAPER] LONG 32.000000 ASTER/USDT:USDT @ 1.902500
+2025-09-29 01:31:39,621 INFO: 🎯 ENTRY LONG ASTER/USDT:USDT
+2025-09-29 01:31:39,621 INFO:    💰 Size: $60.17 | Risk: $0.48
+2025-09-29 01:31:39,621 INFO:    🎯 Entry: $1.902500 | Stop: 3.33%
+2025-09-29 01:31:39,621 INFO:    📈 Reason: 1m Reversal Long: RSI 30.7 + 2 green candles
+💰 SCALPER CALC:
+   Equity: $200.5509 | Risk: $2.005509
+   Position: $60.16527 | Stop: 3.3%
+   Qty: 31.848642
+2025-09-29 01:37:10,546 INFO:    📊 Current price for ASTER/USDT:USDT: $1.888400
+2025-09-29 01:37:12,989 INFO:    🔧 Quantity: 31.848642 → 32.000000 (step: 1.0)
+2025-09-29 01:37:12,989 INFO:    💰 Notional: $60.39 | Min: $10
+2025-09-29 01:37:12,989 INFO: [PAPER] LONG 32.000000 ASTER/USDT:USDT @ 1.888900
+2025-09-29 01:37:12,989 INFO: 🎯 ENTRY LONG ASTER/USDT:USDT
+2025-09-29 01:37:12,989 INFO:    💰 Size: $60.17 | Risk: $0.48
+2025-09-29 01:37:12,989 INFO:    🎯 Entry: $1.889100 | Stop: 3.33%
+2025-09-29 01:37:12,989 INFO:    📈 Reason: 1m Reversal Long: RSI 26.8 + 2 green candles
+2025-09-29 01:40:35,486 INFO: 🚀 Trailing activated for XPL/USDT:USDT @ 1.52%
+2025-09-29 01:42:18,250 INFO: 🔴 CLOSE XPL/USDT:USDT short: trailing_stop, PnL: $0.95 (1.58%)
+2025-09-29 01:44:51,018 INFO: 🔴 CLOSE ETH/USDT:USDT short: initial_stop, PnL: $-0.49 (-0.80%)
+2025-09-29 01:44:59,532 INFO: 🔴 CLOSE ASTER/USDT:USDT long: initial_stop, PnL: $-0.52 (-0.85%)
+2025-09-29 01:45:33,989 INFO: 🔴 CLOSE ETH/USDT:USDT short: initial_stop, PnL: $-0.51 (-0.83%)
+💰 SCALPER CALC:
+   Equity: $199.9814 | Risk: $1.9998140000000002
+   Position: $59.994420000000005 | Stop: 3.3%
+   Qty: 0.014524
+2025-09-29 01:53:50,477 INFO:    📊 Current price for ETH/USDT:USDT: $4130.550000
+2025-09-29 01:53:52,992 INFO:    🔧 Quantity: 0.014524 → 0.015000 (step: 0.001)
+2025-09-29 01:53:52,992 INFO:    💰 Notional: $61.96 | Min: $10
+2025-09-29 01:53:52,992 INFO: [PAPER] SHORT 0.015000 ETH/USDT:USDT @ 4130.850000
+2025-09-29 01:53:52,992 INFO: 🎯 ENTRY SHORT ETH/USDT:USDT
+2025-09-29 01:53:52,992 INFO:    💰 Size: $59.99 | Risk: $0.48
+2025-09-29 01:53:52,992 INFO:    🎯 Entry: $4130.800000 | Stop: 3.33%
+2025-09-29 01:53:52,993 INFO:    📈 Reason: 1m Reversal Short: RSI 76.3 + 2 red candles
+2025-09-29 01:54:29,895 INFO: 📊 Status: 5  $199.98
+💰 SCALPER CALC:
+   Equity: $199.9814 | Risk: $1.9998140000000002
+   Position: $59.994420000000005 | Stop: 3.3%
+   Qty: 0.014537
+2025-09-29 01:55:19,714 INFO:    📊 Current price for ETH/USDT:USDT: $4126.690000
+2025-09-29 01:55:22,170 INFO:    🔧 Quantity: 0.014537 → 0.015000 (step: 0.001)
+2025-09-29 01:55:22,171 INFO:    💰 Notional: $61.91 | Min: $10
+2025-09-29 01:55:22,171 INFO: [PAPER] SHORT 0.015000 ETH/USDT:USDT @ 4126.150000
+2025-09-29 01:55:22,171 INFO: 🎯 ENTRY SHORT ETH/USDT:USDT
+2025-09-29 01:55:22,171 INFO:    💰 Size: $59.99 | Risk: $0.48
+2025-09-29 01:55:22,171 INFO:    🎯 Entry: $4127.000000 | Stop: 3.33%
+2025-09-29 01:55:22,171 INFO:    📈 Reason: 1m Reversal Short: RSI 70.6 + 2 red candles
+💰 SCALPER CALC:
+   Equity: $199.9814 | Risk: $1.9998140000000002
+   Position: $59.994420000000005 | Stop: 3.3%
+   Qty: 31.422207
+2025-09-29 01:55:59,819 INFO:    📊 Current price for ASTER/USDT:USDT: $1.907700
+2025-09-29 01:56:02,496 INFO:    🔧 Quantity: 31.422207 → 31.000000 (step: 1.0)
+2025-09-29 01:56:02,497 INFO:    💰 Notional: $59.13 | Min: $10
+2025-09-29 01:56:02,497 INFO: [PAPER] SHORT 31.000000 ASTER/USDT:USDT @ 1.907300
+2025-09-29 01:56:02,497 INFO: 🎯 ENTRY SHORT ASTER/USDT:USDT
+2025-09-29 01:56:02,497 INFO:    💰 Size: $59.99 | Risk: $0.48
+2025-09-29 01:56:02,497 INFO:    🎯 Entry: $1.909300 | Stop: 3.33%
+2025-09-29 01:56:02,497 INFO:    📈 Reason: 1m Reversal Short: RSI 68.3 + 2 red candles
+2025-09-29 01:57:39,605 INFO: 🚀 Trailing activated for ASTER/USDT:USDT @ 1.51%
+2025-09-29 02:05:11,235 INFO: 🔴 CLOSE ASTER/USDT:USDT long: trailing_stop, PnL: $0.59 (0.97%)
+2025-09-29 02:16:42,249 INFO: 🚀 Trailing activated for XPL/USDT:USDT @ 1.61%
+💰 SCALPER CALC:
+   Equity: $200.5702 | Risk: $2.005702
+   Position: $60.17106 | Stop: 3.3%
+   Qty: 3.830575
+2025-09-29 02:18:18,943 INFO:    📊 Current price for MYX/USDT:USDT: $15.734100
+2025-09-29 02:18:22,296 INFO:    🔧 Quantity: 3.830575 → 3.800000 (step: 0.1)
+2025-09-29 02:18:22,296 INFO:    💰 Notional: $59.84 | Min: $10
+2025-09-29 02:18:22,296 INFO: [PAPER] SHORT 3.800000 MYX/USDT:USDT @ 15.724500
+2025-09-29 02:18:22,296 INFO: 🎯 ENTRY SHORT MYX/USDT:USDT
+2025-09-29 02:18:22,296 INFO:    💰 Size: $60.17 | Risk: $0.48
+2025-09-29 02:18:22,296 INFO:    🎯 Entry: $15.708100 | Stop: 3.33%
+2025-09-29 02:18:22,296 INFO:    📈 Reason: 1m Reversal Short: RSI 78.8 + 2 red candles
+💰 SCALPER CALC:
+   Equity: $200.5702 | Risk: $2.005702
+   Position: $60.17106 | Stop: 3.3%
+   Qty: 3.819681
+2025-09-29 02:19:17,971 INFO:    📊 Current price for MYX/USDT:USDT: $15.738500
+2025-09-29 02:19:21,625 INFO:    🔧 Quantity: 3.819681 → 3.800000 (step: 0.1)
+2025-09-29 02:19:21,625 INFO:    💰 Notional: $59.83 | Min: $10
+2025-09-29 02:19:21,625 INFO: [PAPER] SHORT 3.800000 MYX/USDT:USDT @ 15.757800
+2025-09-29 02:19:21,625 INFO: 🎯 ENTRY SHORT MYX/USDT:USDT
+2025-09-29 02:19:21,625 INFO:    💰 Size: $60.17 | Risk: $0.48
+2025-09-29 02:19:21,625 INFO:    🎯 Entry: $15.752900 | Stop: 3.33%
+2025-09-29 02:19:21,625 INFO:    📈 Reason: 1m Reversal Short: RSI 79.1 + 2 red candles
+2025-09-29 02:20:17,422 INFO: 🔴 CLOSE XPL/USDT:USDT short: trailing_stop, PnL: $0.92 (1.54%)
+💰 SCALPER CALC:
+   Equity: $201.4886 | Risk: $2.0148859999999997
+   Position: $60.44657999999999 | Stop: 3.3%
+   Qty: 42.079067
+2025-09-29 02:21:21,889 INFO:    📊 Current price for XPL/USDT:USDT: $1.436500
+2025-09-29 02:21:25,448 INFO:    🔧 Quantity: 42.079067 → 42.000000 (step: 1.0)
+2025-09-29 02:21:25,448 INFO:    💰 Notional: $60.37 | Min: $10
+2025-09-29 02:21:25,448 INFO: [PAPER] LONG 42.000000 XPL/USDT:USDT @ 1.437500
+2025-09-29 02:21:25,448 INFO: 🎯 ENTRY LONG XPL/USDT:USDT
+2025-09-29 02:21:25,448 INFO:    💰 Size: $60.45 | Risk: $0.48
+2025-09-29 02:21:25,448 INFO:    🎯 Entry: $1.436500 | Stop: 3.33%
+2025-09-29 02:21:25,448 INFO:    📈 Reason: 1m Reversal Long: RSI 31.7 + 2 green candles
+2025-09-29 02:21:53,169 INFO: 🔴 CLOSE MYX/USDT:USDT short: initial_stop, PnL: $-0.60 (-1.00%)
+2025-09-29 02:22:42,891 INFO: 🔴 CLOSE MYX/USDT:USDT short: initial_stop, PnL: $-0.76 (-1.27%)
+2025-09-29 02:23:59,266 INFO: 🚀 Trailing activated for ASTER/USDT:USDT @ 1.58%
+2025-09-29 02:24:04,496 INFO: 🔴 CLOSE XPL/USDT:USDT long: initial_stop, PnL: $-0.50 (-0.83%)
+2025-09-29 02:25:06,529 INFO: 🔴 CLOSE ASTER/USDT:USDT short: trailing_stop, PnL: $1.09 (1.85%)
+💰 SCALPER CALC:
+   Equity: $200.72109999999998 | Risk: $2.007211
+   Position: $60.21633 | Stop: 3.3%
+   Qty: 3.779157
+2025-09-29 02:25:23,385 INFO:    📊 Current price for MYX/USDT:USDT: $15.923300
+2025-09-29 02:25:26,249 INFO:    🔧 Quantity: 3.779157 → 3.800000 (step: 0.1)
+2025-09-29 02:25:26,250 INFO:    💰 Notional: $60.51 | Min: $10
+2025-09-29 02:25:26,250 INFO: [PAPER] SHORT 3.800000 MYX/USDT:USDT @ 15.922400
+2025-09-29 02:25:26,250 INFO: 🎯 ENTRY SHORT MYX/USDT:USDT
+2025-09-29 02:25:26,250 INFO:    💰 Size: $60.22 | Risk: $0.48
+2025-09-29 02:25:26,250 INFO:    🎯 Entry: $15.933800 | Stop: 3.33%
+2025-09-29 02:25:26,250 INFO:    📈 Reason: 1m Reversal Short: RSI 74.5 + 2 red candles
+💰 SCALPER CALC:
+   Equity: $200.72109999999998 | Risk: $2.007211
+   Position: $60.21633 | Stop: 3.3%
+   Qty: 3.784049
+2025-09-29 02:26:05,262 INFO:    📊 Current price for MYX/USDT:USDT: $15.858600
+2025-09-29 02:26:09,529 INFO:    🔧 Quantity: 3.784049 → 3.800000 (step: 0.1)
+2025-09-29 02:26:09,529 INFO:    💰 Notional: $60.33 | Min: $10
+2025-09-29 02:26:09,529 INFO: [PAPER] SHORT 3.800000 MYX/USDT:USDT @ 15.901800
+2025-09-29 02:26:09,529 INFO: 🎯 ENTRY SHORT MYX/USDT:USDT
+2025-09-29 02:26:09,529 INFO:    💰 Size: $60.22 | Risk: $0.48
+2025-09-29 02:26:09,530 INFO:    🎯 Entry: $15.913200 | Stop: 3.33%
+2025-09-29 02:26:09,530 INFO:    📈 Reason: 1m Reversal Short: RSI 76.4 + 2 red candles
+💰 SCALPER CALC:
+   Equity: $200.72109999999998 | Risk: $2.007211
+   Position: $60.21633 | Stop: 3.3%
+   Qty: 42.186024
+2025-09-29 02:28:02,691 INFO:    📊 Current price for XPL/USDT:USDT: $1.428200
+2025-09-29 02:28:05,164 INFO:    🔧 Quantity: 42.186024 → 42.000000 (step: 1.0)
+2025-09-29 02:28:05,164 INFO:    💰 Notional: $59.98 | Min: $10
+2025-09-29 02:28:05,164 INFO: [PAPER] LONG 42.000000 XPL/USDT:USDT @ 1.428900
+2025-09-29 02:28:05,164 INFO: 🎯 ENTRY LONG XPL/USDT:USDT
+2025-09-29 02:28:05,164 INFO:    💰 Size: $60.22 | Risk: $0.48
+2025-09-29 02:28:05,164 INFO:    🎯 Entry: $1.427400 | Stop: 3.33%
+2025-09-29 02:28:05,164 INFO:    📈 Reason: 1m Reversal Long: RSI 23.7 + 2 green candles
+2025-09-29 02:37:55,684 INFO: 🔴 CLOSE HYPE/USDT:USDT short: initial_stop, PnL: $-0.52 (-0.85%)
+2025-09-29 02:42:36,091 INFO: 🔴 CLOSE HYPE/USDT:USDT short: initial_stop, PnL: $-0.49 (-0.81%)
+💰 SCALPER CALC:
+   Equity: $199.70709999999997 | Risk: $1.9970709999999998
+   Position: $59.91212999999999 | Stop: 3.3%
+   Qty: 1.268008
+2025-09-29 02:45:29,353 INFO:    📊 Current price for HYPE/USDT:USDT: $47.239000
+2025-09-29 02:45:34,270 INFO:    🔧 Quantity: 1.268008 → 1.300000 (step: 0.1)
+2025-09-29 02:45:34,270 INFO:    💰 Notional: $61.41 | Min: $10
+2025-09-29 02:45:34,270 INFO: [PAPER] SHORT 1.300000 HYPE/USDT:USDT @ 47.243000
+2025-09-29 02:45:34,271 INFO: 🎯 ENTRY SHORT HYPE/USDT:USDT
+2025-09-29 02:45:34,271 INFO:    💰 Size: $59.91 | Risk: $0.48
+2025-09-29 02:45:34,271 INFO:    🎯 Entry: $47.249000 | Stop: 3.33%
+2025-09-29 02:45:34,271 INFO:    📈 Reason: 1m Reversal Short: RSI 71.1 + 2 red candles
+2025-09-29 02:46:01,050 INFO: 🚀 Trailing activated for XPL/USDT:USDT @ 1.97%
+💰 SCALPER CALC:
+   Equity: $199.70709999999997 | Risk: $1.9970709999999998
+   Position: $59.91212999999999 | Stop: 3.3%
+   Qty: 41.139964
+2025-09-29 02:47:35,544 INFO:    📊 Current price for XPL/USDT:USDT: $1.456600
+2025-09-29 02:47:37,988 INFO:    🔧 Quantity: 41.139964 → 41.000000 (step: 1.0)
+2025-09-29 02:47:37,988 INFO:    💰 Notional: $59.70 | Min: $10
+2025-09-29 02:47:37,988 INFO: [PAPER] SHORT 41.000000 XPL/USDT:USDT @ 1.456800
+2025-09-29 02:47:37,988 INFO: 🎯 ENTRY SHORT XPL/USDT:USDT
+2025-09-29 02:47:37,988 INFO:    💰 Size: $59.91 | Risk: $0.48
+2025-09-29 02:47:37,988 INFO:    🎯 Entry: $1.456300 | Stop: 3.33%
+2025-09-29 02:47:37,988 INFO:    📈 Reason: 1m Reversal Short: RSI 80.5 + 2 red candles
+2025-09-29 02:50:56,575 INFO: 🔴 CLOSE XPL/USDT:USDT long: trailing_stop, PnL: $1.05 (1.75%)
+💰 SCALPER CALC:
+   Equity: $200.75709999999995 | Risk: $2.0075709999999996
+   Position: $60.22712999999999 | Stop: 3.3%
+   Qty: 41.530223
+2025-09-29 02:51:18,830 INFO:    📊 Current price for XPL/USDT:USDT: $1.448600
+2025-09-29 02:51:21,519 INFO:    🔧 Quantity: 41.530223 → 42.000000 (step: 1.0)
+2025-09-29 02:51:21,519 INFO:    💰 Notional: $60.87 | Min: $10
+2025-09-29 02:51:21,519 INFO: [PAPER] SHORT 42.000000 XPL/USDT:USDT @ 1.449400
+2025-09-29 02:51:21,519 INFO: 🎯 ENTRY SHORT XPL/USDT:USDT
+2025-09-29 02:51:21,519 INFO:    💰 Size: $60.23 | Risk: $0.48
+2025-09-29 02:51:21,519 INFO:    🎯 Entry: $1.450200 | Stop: 3.33%
+2025-09-29 02:51:21,519 INFO:    📈 Reason: 1m Reversal Short: RSI 71.9 + 2 red candles
+💰 SCALPER CALC:
+   Equity: $200.75709999999995 | Risk: $2.0075709999999996
+   Position: $60.22712999999999 | Stop: 3.3%
+   Qty: 1.277297
+2025-09-29 02:52:03,900 INFO:    📊 Current price for HYPE/USDT:USDT: $47.170000
+2025-09-29 02:52:07,278 INFO:    🔧 Quantity: 1.277297 → 1.300000 (step: 0.1)
+2025-09-29 02:52:07,278 INFO:    💰 Notional: $61.28 | Min: $10
+2025-09-29 02:52:07,278 INFO: [PAPER] LONG 1.300000 HYPE/USDT:USDT @ 47.167000
+2025-09-29 02:52:07,278 INFO: 🎯 ENTRY LONG HYPE/USDT:USDT
+2025-09-29 02:52:07,278 INFO:    💰 Size: $60.23 | Risk: $0.48
+2025-09-29 02:52:07,278 INFO:    🎯 Entry: $47.152000 | Stop: 3.33%
+2025-09-29 02:52:07,279 INFO:    📈 Reason: 1m Reversal Long: RSI 31.6 + 2 green candles
+2025-09-29 02:54:01,450 INFO: 🔴 CLOSE MYX/USDT:USDT short: initial_stop, PnL: $-0.48 (-0.80%)
+2025-09-29 02:58:40,509 INFO: 🔴 CLOSE MYX/USDT:USDT short: initial_stop, PnL: $-0.52 (-0.86%)
+2025-09-29 03:01:00,239 INFO: 🔴 CLOSE XPL/USDT:USDT short: initial_stop, PnL: $-0.55 (-0.90%)
+2025-09-29 03:03:05,977 INFO: 🔴 CLOSE XPL/USDT:USDT short: initial_stop, PnL: $-0.91 (-1.52%)
+💰 SCALPER CALC:
+   Equity: $198.29425999999995 | Risk: $1.9829425999999997
+   Position: $59.488277999999994 | Stop: 3.3%
+   Qty: 40.440706
+2025-09-29 03:10:28,441 INFO:    📊 Current price for XPL/USDT:USDT: $1.472100
+2025-09-29 03:10:32,558 INFO:    🔧 Quantity: 40.440706 → 40.000000 (step: 1.0)
+2025-09-29 03:10:32,558 INFO:    💰 Notional: $58.86 | Min: $10
+2025-09-29 03:10:32,558 INFO: [PAPER] SHORT 40.000000 XPL/USDT:USDT @ 1.470700
+2025-09-29 03:10:32,558 INFO: 🎯 ENTRY SHORT XPL/USDT:USDT
+2025-09-29 03:10:32,558 INFO:    💰 Size: $59.49 | Risk: $0.48
+2025-09-29 03:10:32,558 INFO:    🎯 Entry: $1.471000 | Stop: 3.33%
+2025-09-29 03:10:32,558 INFO:    📈 Reason: 1m Reversal Short: RSI 71.8 + 2 red candles
+💰 SCALPER CALC:
+   Equity: $198.29425999999995 | Risk: $1.9829425999999997
+   Position: $59.488277999999994 | Stop: 3.3%
+   Qty: 40.355660
+2025-09-29 03:11:49,099 INFO:    📊 Current price for XPL/USDT:USDT: $1.472700
+2025-09-29 03:11:51,683 INFO:    🔧 Quantity: 40.355660 → 40.000000 (step: 1.0)
+2025-09-29 03:11:51,683 INFO:    💰 Notional: $58.89 | Min: $10
+2025-09-29 03:11:51,683 INFO: [PAPER] SHORT 40.000000 XPL/USDT:USDT @ 1.473500
+2025-09-29 03:11:51,683 INFO: 🎯 ENTRY SHORT XPL/USDT:USDT
+2025-09-29 03:11:51,683 INFO:    💰 Size: $59.49 | Risk: $0.48
+2025-09-29 03:11:51,683 INFO:    🎯 Entry: $1.474100 | Stop: 3.33%
+2025-09-29 03:11:51,683 INFO:    📈 Reason: 1m Reversal Short: RSI 72.0 + 2 red candles
+2025-09-29 03:15:15,575 INFO: 🔴 CLOSE HYPE/USDT:USDT long: initial_stop, PnL: $-0.50 (-0.81%)
+💰 SCALPER CALC:
+   Equity: $197.79895999999997 | Risk: $1.9779895999999997
+   Position: $59.33968799999999 | Stop: 3.3%
+   Qty: 3.747588
+2025-09-29 03:16:22,812 INFO:    📊 Current price for MYX/USDT:USDT: $15.851400
+2025-09-29 03:16:25,304 INFO:    🔧 Quantity: 3.747588 → 3.700000 (step: 0.1)
+2025-09-29 03:16:25,304 INFO:    💰 Notional: $58.62 | Min: $10
+2025-09-29 03:16:25,305 INFO: [PAPER] LONG 3.700000 MYX/USDT:USDT @ 15.830000
+2025-09-29 03:16:25,305 INFO: 🎯 ENTRY LONG MYX/USDT:USDT
+2025-09-29 03:16:25,305 INFO:    💰 Size: $59.34 | Risk: $0.47
+2025-09-29 03:16:25,305 INFO:    🎯 Entry: $15.834100 | Stop: 3.33%
+2025-09-29 03:16:25,305 INFO:    📈 Reason: 1m Reversal Long: RSI 26.4 + 2 green candles
+💰 SCALPER CALC:
+   Equity: $197.79895999999997 | Risk: $1.9779895999999997
+   Position: $59.33968799999999 | Stop: 3.3%
+   Qty: 1.272210
+2025-09-29 03:18:21,185 INFO:    📊 Current price for HYPE/USDT:USDT: $46.662000
+2025-09-29 03:18:25,466 INFO:    🔧 Quantity: 1.272210 → 1.300000 (step: 0.1)
+2025-09-29 03:18:25,467 INFO:    💰 Notional: $60.68 | Min: $10
+2025-09-29 03:18:25,467 INFO: [PAPER] LONG 1.300000 HYPE/USDT:USDT @ 46.644000
+2025-09-29 03:18:25,467 INFO: 🎯 ENTRY LONG HYPE/USDT:USDT
+2025-09-29 03:18:25,467 INFO:    💰 Size: $59.34 | Risk: $0.47
+2025-09-29 03:18:25,467 INFO:    🎯 Entry: $46.643000 | Stop: 3.33%
+2025-09-29 03:18:25,467 INFO:    📈 Reason: 1m Reversal Long: RSI 25.0 + 2 green candles
+2025-09-29 03:18:45,649 INFO: 🔴 CLOSE XPL/USDT:USDT short: initial_stop, PnL: $-0.48 (-0.81%)
+2025-09-29 03:19:23,225 INFO: 🔴 CLOSE XPL/USDT:USDT short: initial_stop, PnL: $-1.01 (-1.71%)
+💰 SCALPER CALC:
+   Equity: $196.31495999999999 | Risk: $1.9631496
+   Position: $58.894488 | Stop: 3.3%
+   Qty: 3.737885
+2025-09-29 03:19:49,513 INFO:    📊 Current price for MYX/USDT:USDT: $15.773000
+2025-09-29 03:19:55,048 INFO:    🔧 Quantity: 3.737885 → 3.700000 (step: 0.1)
+2025-09-29 03:19:55,048 INFO:    💰 Notional: $58.40 | Min: $10
+2025-09-29 03:19:55,048 INFO: [PAPER] LONG 3.700000 MYX/USDT:USDT @ 15.756300
+2025-09-29 03:19:55,048 INFO: 🎯 ENTRY LONG MYX/USDT:USDT
+2025-09-29 03:19:55,048 INFO:    💰 Size: $58.89 | Risk: $0.47
+2025-09-29 03:19:55,048 INFO:    🎯 Entry: $15.756100 | Stop: 3.33%
+2025-09-29 03:19:55,048 INFO:    📈 Reason: 1m Reversal Long: RSI 20.8 + 2 green candles
+💰 SCALPER CALC:
+   Equity: $196.31495999999999 | Risk: $1.9631496
+   Position: $58.894488 | Stop: 3.3%
+   Qty: 32.205659
+2025-09-29 03:21:14,981 INFO:    📊 Current price for ASTER/USDT:USDT: $1.829900
+2025-09-29 03:21:17,485 INFO:    🔧 Quantity: 32.205659 → 32.000000 (step: 1.0)
+2025-09-29 03:21:17,485 INFO:    💰 Notional: $58.55 | Min: $10
+2025-09-29 03:21:17,485 INFO: [PAPER] LONG 32.000000 ASTER/USDT:USDT @ 1.828200
+2025-09-29 03:21:17,485 INFO: 🎯 ENTRY LONG ASTER/USDT:USDT
+2025-09-29 03:21:17,486 INFO:    💰 Size: $58.89 | Risk: $0.47
+2025-09-29 03:21:17,486 INFO:    🎯 Entry: $1.828700 | Stop: 3.33%
+2025-09-29 03:21:17,486 INFO:    📈 Reason: 1m Reversal Long: RSI 28.6 + 2 green candles
+💰 SCALPER CALC:
+   Equity: $196.31495999999999 | Risk: $1.9631496
+   Position: $58.894488 | Stop: 3.3%
+   Qty: 32.159934
+2025-09-29 03:22:04,627 INFO:    📊 Current price for ASTER/USDT:USDT: $1.833000
+2025-09-29 03:22:07,474 INFO:    🔧 Quantity: 32.159934 → 32.000000 (step: 1.0)
+2025-09-29 03:22:07,474 INFO:    💰 Notional: $58.67 | Min: $10
+2025-09-29 03:22:07,474 INFO: [PAPER] LONG 32.000000 ASTER/USDT:USDT @ 1.831800
+2025-09-29 03:22:07,474 INFO: 🎯 ENTRY LONG ASTER/USDT:USDT
+2025-09-29 03:22:07,474 INFO:    💰 Size: $58.89 | Risk: $0.47
+2025-09-29 03:22:07,474 INFO:    🎯 Entry: $1.831300 | Stop: 3.33%
+2025-09-29 03:22:07,474 INFO:    📈 Reason: 1m Reversal Long: RSI 31.6 + 2 green candles
+💰 SCALPER CALC:
+   Equity: $196.31495999999999 | Risk: $1.9631496
+   Position: $58.894488 | Stop: 3.3%
+   Qty: 38.629469
+2025-09-29 03:29:02,037 INFO:    📊 Current price for XPL/USDT:USDT: $1.524300
+2025-09-29 03:29:04,546 INFO:    🔧 Quantity: 38.629469 → 39.000000 (step: 1.0)
+2025-09-29 03:29:04,546 INFO:    💰 Notional: $59.50 | Min: $10
+2025-09-29 03:29:04,546 INFO: [PAPER] SHORT 39.000000 XPL/USDT:USDT @ 1.524600
+2025-09-29 03:29:04,546 INFO: 🎯 ENTRY SHORT XPL/USDT:USDT
+2025-09-29 03:29:04,546 INFO:    💰 Size: $58.89 | Risk: $0.47
+2025-09-29 03:29:04,546 INFO:    🎯 Entry: $1.524600 | Stop: 3.33%
+2025-09-29 03:29:04,546 INFO:    📈 Reason: 1m Reversal Short: RSI 70.5 + 2 red candles
+💰 SCALPER CALC:
+   Equity: $196.31495999999999 | Risk: $1.9631496
+   Position: $58.894488 | Stop: 3.3%
+   Qty: 38.680210
+2025-09-29 03:29:47,732 INFO:    📊 Current price for XPL/USDT:USDT: $1.521500
+2025-09-29 03:29:50,913 INFO:    🔧 Quantity: 38.680210 → 39.000000 (step: 1.0)
+2025-09-29 03:29:50,913 INFO:    💰 Notional: $59.27 | Min: $10
+2025-09-29 03:29:50,913 INFO: [PAPER] SHORT 39.000000 XPL/USDT:USDT @ 1.521800
+2025-09-29 03:29:50,913 INFO: 🎯 ENTRY SHORT XPL/USDT:USDT
+2025-09-29 03:29:50,913 INFO:    💰 Size: $58.89 | Risk: $0.47
+2025-09-29 03:29:50,914 INFO:    🎯 Entry: $1.522600 | Stop: 3.33%
+2025-09-29 03:29:50,914 INFO:    📈 Reason: 1m Reversal Short: RSI 72.6 + 2 red candles
+2025-09-29 03:29:50,914 INFO: 📊 Status: 10 open | Equity: $196.31
+2025-09-29 03:31:18,900 INFO: 📊 Status: 10 open | Equity: $196.31
+2025-09-29 03:32:30,968 INFO: 📊 Status: 10 open | Equity: $196.31
+2025-09-29 03:33:26,455 INFO: 🚀 Trailing activated for HYPE/USDT:USDT @ 1.61%
+2025-09-29 03:33:52,877 INFO: 📊 Status: 10 open | Equity: $196.31
+2025-09-29 03:35:03,844 INFO: 📊 Status: 10 open | Equity: $196.31
+2025-09-29 03:36:16,598 INFO: 📊 Status: 10 open | Equity: $196.31
+2025-09-29 03:37:35,357 INFO: 📊 Status: 10 open | Equity: $196.31
+2025-09-29 03:38:29,755 INFO: 🔴 CLOSE MYX/USDT:USDT long: initial_stop, PnL: $-0.69 (-1.18%)
+2025-09-29 03:38:36,236 INFO: 🔴 CLOSE MYX/USDT:USDT long: initial_stop, PnL: $-0.47 (-0.81%)
+
+2025-09-29 03:45:28,904 INFO: 🔴 CLOSE HYPE/USDT:USDT short: trailing_stop, PnL: $0.82 (1.33%)
+
+💰 SCALPER CALC:
+   Equity: $195.96733999999998 | Risk: $1.9596733999999998
+   Position: $58.790201999999994 | Stop: 3.3%
+   Qty: 1.258244
+2025-09-29 03:58:31,828 INFO:    📊 Current price for HYPE/USDT:USDT: $46.784000
+2025-09-29 03:58:37,119 INFO:    🔧 Quantity: 1.258244 → 1.300000 (step: 0.1)
+2025-09-29 03:58:37,119 INFO:    💰 Notional: $60.82 | Min: $10
+2025-09-29 03:58:37,119 INFO: [PAPER] SHORT 1.300000 HYPE/USDT:USDT @ 46.765000
+2025-09-29 03:58:37,119 INFO: 🎯 ENTRY SHORT HYPE/USDT:USDT
+2025-09-29 03:58:37,119 INFO:    💰 Size: $58.79 | Risk: $0.47
+2025-09-29 03:58:37,119 INFO:    🎯 Entry: $46.724000 | Stop: 3.33%
+2025-09-29 03:58:37,119 INFO:    📈 Reason: 1m Reversal Short: RSI 68.8 + 2 red candles
+2025-09-29 03:58:37,119 INFO: 📊 Status: 8 open | Equity: $195.97
+2025-09-29 03:59:25,034 INFO: 🚀 Trailing activated for ASTER/USDT:USDT @ 1.61%
+2025-09-29 03:59:42,954 INFO: 📊 Status: 8 open | Equity: $195.97
+2025-09-29 04:00:12,409 INFO: 🚀 Trailing activated for ASTER/USDT:USDT @ 1.67%
+2025-09-29 04:00:54,706 INFO: 📊 Status: 8 open | Equity: $195.97
+2025-09-29 04:01:10,812 INFO: 🔴 CLOSE ASTER/USDT:USDT long: trailing_stop, PnL: $0.93 (1.60%)
+💰 SCALPER CALC:
+   Equity: $196.90173999999996 | Risk: $1.9690173999999996
+   Position: $59.07052199999999 | Stop: 3.3%
+   Qty: 31.833651
+2025-09-29 04:01:36,574 INFO:    📊 Current price for ASTER/USDT:USDT: $1.855800
+2025-09-29 04:01:39,077 INFO:    🔧 Quantity: 31.833651 → 32.000000 (step: 1.0)
+2025-09-29 04:01:39,078 INFO:    💰 Notional: $59.38 | Min: $10
+2025-09-29 04:01:39,078 INFO: [PAPER] SHORT 32.000000 ASTER/USDT:USDT @ 1.855700
+2025-09-29 04:01:39,078 INFO: 🎯 ENTRY SHORT ASTER/USDT:USDT
+2025-09-29 04:01:39,078 INFO:    💰 Size: $59.07 | Risk: $0.47
+2025-09-29 04:01:39,078 INFO:    🎯 Entry: $1.855600 | Stop: 3.33%
+2025-09-29 04:01:39,078 INFO:    📈 Reason: 1m Reversal Short: RSI 72.3 + 2 red candles
+2025-09-29 04:02:10,390 INFO: 📊 Status: 8 open | Equity: $196.90
+2025-09-29 04:02:31,181 INFO: 🔴 CLOSE ASTER/USDT:USDT long: trailing_stop, PnL: $0.62 (1.05%)
+2025-09-29 04:02:33,681 INFO: 🚀 Trailing activated for XPL/USDT:USDT @ 1.91%
+2025-09-29 04:02:36,132 INFO: 🚀 Trailing activated for XPL/USDT:USDT @ 1.70%
+2025-09-29 04:03:23,321 INFO: 📊 Status: 7 open | Equity: $197.52
+💰 SCALPER CALC:
+   Equity: $197.51933999999994 | Risk: $1.9751933999999995
+   Position: $59.25580199999999 | Stop: 3.3%
+   Qty: 3.727296
+2025-09-29 04:04:05,617 INFO:    📊 Current price for MYX/USDT:USDT: $15.928300
+2025-09-29 04:04:08,030 INFO:    🔧 Quantity: 3.727296 → 3.700000 (step: 0.1)
+2025-09-29 04:04:08,031 INFO:    💰 Notional: $58.98 | Min: $10
+2025-09-29 04:04:08,031 INFO: [PAPER] SHORT 3.700000 MYX/USDT:USDT @ 15.909300
+2025-09-29 04:04:08,031 INFO: 🎯 ENTRY SHORT MYX/USDT:USDT
+2025-09-29 04:04:08,031 INFO:    💰 Size: $59.26 | Risk: $0.47
+2025-09-29 04:04:08,031 INFO:    🎯 Entry: $15.897800 | Stop: 3.33%
+2025-09-29 04:04:08,031 INFO:    📈 Reason: 1m Reversal Short: RSI 70.1 + 2 red candles
+2025-09-29 04:04:47,522 INFO: 📊 Status: 8 open | Equity: $197.52
+2025-09-29 04:06:04,591 INFO: 📊 Status: 8 open | Equity: $197.52
+2025-09-29 04:06:23,514 INFO: 🔴 CLOSE XPL/USDT:USDT short: trailing_stop, PnL: $1.25 (2.11%)
+2025-09-29 04:07:21,654 INFO: 📊 Status: 7 open | Equity: $198.77
+2025-09-29 04:07:44,535 INFO: 🔴 CLOSE XPL/USDT:USDT short: trailing_stop, PnL: $1.27 (2.14%)
+💰 SCALPER CALC:
+   Equity: $200.04263999999995 | Risk: $2.0004263999999994
+   Position: $60.01279199999998 | Stop: 3.3%
+   Qty: 40.255428
+2025-09-29 04:08:14,297 INFO:    📊 Current price for XPL/USDT:USDT: $1.489700
+2025-09-29 04:08:16,740 INFO:    🔧 Quantity: 40.255428 → 40.000000 (step: 1.0)
+2025-09-29 04:08:16,740 INFO:    💰 Notional: $59.59 | Min: $10
+2025-09-29 04:08:16,740 INFO: [PAPER] LONG 40.000000 XPL/USDT:USDT @ 1.490000
+2025-09-29 04:08:16,740 INFO: 🎯 ENTRY LONG XPL/USDT:USDT
+2025-09-29 04:08:16,740 INFO:    💰 Size: $60.01 | Risk: $0.48
+2025-09-29 04:08:16,740 INFO:    🎯 Entry: $1.490800 | Stop: 3.33%
+2025-09-29 04:08:16,740 INFO:    📈 Reason: 1m Reversal Long: RSI 26.6 + 2 green candles
+2025-09-29 04:08:58,032 INFO: 📊 Status: 7 open | Equity: $200.04
+💰 SCALPER CALC:
+   Equity: $200.04263999999995 | Risk: $2.0004263999999994
+   Position: $60.01279199999998 | Stop: 3.3%
+   Qty: 40.252728
+2025-09-29 04:10:31,663 INFO:    📊 Current price for XPL/USDT:USDT: $1.490900
+2025-09-29 04:10:36,301 INFO:    🔧 Quantity: 40.252728 → 40.000000 (step: 1.0)
+2025-09-29 04:10:36,301 INFO:    💰 Notional: $59.57 | Min: $10
+2025-09-29 04:10:36,301 INFO: [PAPER] LONG 40.000000 XPL/USDT:USDT @ 1.491000
+2025-09-29 04:10:36,301 INFO: 🎯 ENTRY LONG XPL/USDT:USDT
+2025-09-29 04:10:36,301 INFO:    💰 Size: $60.01 | Risk: $0.48
+2025-09-29 04:10:36,301 INFO:    🎯 Entry: $1.490900 | Stop: 3.33%
+2025-09-29 04:10:36,302 INFO:    📈 Reason: 1m Reversal Long: RSI 29.9 + 2 green candles
+2025-09-29 04:10:36,302 INFO: 📊 Status: 8 open | Equity: $200.04
+2025-09-29 04:11:49,749 INFO: 📊 Status: 8 open | Equity: $200.04
+2025-09-29 04:13:01,090 INFO: 📊 Status: 8 open | Equity: $200.04
+2025-09-29 04:14:16,404 INFO: 📊 Status: 8 open | Equity: $200.04
+2025-09-29 04:15:38,891 INFO: 📊 Status: 8 open | Equity: $200.04
+2025-09-29 04:16:56,335 INFO: 📊 Status: 8 open | Equity: $200.04
+2025-09-29 04:18:18,216 INFO: 📊 Status: 8 open | Equity: $200.04
+2025-09-29 04:19:28,556 INFO: 📊 Status: 8 open | Equity: $200.04
+💰 SCALPER CALC:
+   Equity: $200.04263999999995 | Risk: $2.0004263999999994
+   Position: $60.01279199999998 | Stop: 3.3%
+   Qty: 3.807483
+2025-09-29 04:20:28,058 INFO:    📊 Current price for MYX/USDT:USDT: $15.777700
+2025-09-29 04:20:32,286 INFO:    🔧 Quantity: 3.807483 → 3.800000 (step: 0.1)
+2025-09-29 04:20:32,286 INFO:    💰 Notional: $59.93 | Min: $10
+2025-09-29 04:20:32,286 INFO: [PAPER] LONG 3.800000 MYX/USDT:USDT @ 15.763100
+2025-09-29 04:20:32,286 INFO: 🎯 ENTRY LONG MYX/USDT:USDT
+2025-09-29 04:20:32,286 INFO:    💰 Size: $60.01 | Risk: $0.48
+2025-09-29 04:20:32,286 INFO:    🎯 Entry: $15.761800 | Stop: 3.33%
+2025-09-29 04:20:32,286 INFO:    📈 Reason: 1m Reversal Long: RSI 27.9 + 2 green candles
+2025-09-29 04:20:32,286 INFO: 📊 Status: 9 open | Equity: $200.04
+2025-09-29 04:21:56,175 INFO: 📊 Status: 9 open | Equity: $200.04
+💰 SCALPER CALC:
+   Equity: $200.04263999999995 | Risk: $2.0004263999999994
+   Position: $60.01279199999998 | Stop: 3.3%
+   Qty: 32.592620
+2025-09-29 04:22:41,957 INFO:    📊 Current price for ASTER/USDT:USDT: $1.843800
+2025-09-29 04:22:47,547 INFO:    🔧 Quantity: 32.592620 → 33.000000 (step: 1.0)
+2025-09-29 04:22:47,547 INFO:    💰 Notional: $60.85 | Min: $10
+2025-09-29 04:22:47,547 INFO: [PAPER] LONG 33.000000 ASTER/USDT:USDT @ 1.842500
+2025-09-29 04:22:47,547 INFO: 🎯 ENTRY LONG ASTER/USDT:USDT
+2025-09-29 04:22:47,547 INFO:    💰 Size: $60.01 | Risk: $0.48
+2025-09-29 04:22:47,547 INFO:    🎯 Entry: $1.841300 | Stop: 3.33%
+2025-09-29 04:22:47,547 INFO:    📈 Reason: 1m Reversal Long: RSI 30.5 + 2 green candles
+2025-09-29 04:23:23,665 INFO: 📊 Status: 10 open | Equity: $200.04
+2025-09-29 04:24:38,158 INFO: 📊 Status: 10 open | Equity: $200.04
+2025-09-29 04:25:14,012 INFO: 🔴 CLOSE XPL/USDT:USDT long: initial_stop, PnL: $-0.56 (-0.94%)
+2025-09-29 04:26:01,299 INFO: 🔴 CLOSE XPL/USDT:USDT long: initial_stop, PnL: $-0.76 (-1.28%)
+2025-09-29 04:26:12,212 INFO: 📊 Status: 8 open | Equity: $198.72
+2025-09-29 04:27:28,532 INFO: 📊 Status: 8 open | Equity: $198.72
+2025-09-29 04:28:31,805 INFO: 📊 Status: 8 open | Equity: $198.72
+2025-09-29 04:29:43,818 INFO: 📊 Status: 8 open | Equity: $198.72
+2025-09-29 04:29:58,707 INFO: 🔴 CLOSE HYPE/USDT:USDT short: initial_stop, PnL: $-0.50 (-0.83%)
+2025-09-29 04:31:12,140 INFO: 📊 Status: 7 open | Equity: $198.22
+2025-09-29 04:32:26,930 INFO: 📊 Status: 7 open | Equity: $198.22
+2025-09-29 04:33:34,524 INFO: 📊 Status: 7 open | Equity: $198.22
+2025-09-29 04:34:39,416 INFO: 📊 Status: 7 open | Equity: $198.22
+2025-09-29 04:35:57,154 INFO: 📊 Status: 7 open | Equity: $198.22
+2025-09-29 04:37:09,736 INFO: 📊 Status: 7 open | Equity: $198.22
+2025-09-29 04:38:20,997 INFO: 📊 Status: 7 open | Equity: $198.22
+2025-09-29 04:39:11,123 INFO: 🚀 Trailing activated for HYPE/USDT:USDT @ 1.53%
+💰 SCALPER CALC:
+   Equity: $198.21553999999995 | Risk: $1.9821553999999995
+   Position: $59.464661999999976 | Stop: 3.3%
+   Qty: 41.058249
+2025-09-29 04:39:40,650 INFO:    📊 Current price for XPL/USDT:USDT: $1.448800
+2025-09-29 04:39:43,136 INFO:    🔧 Quantity: 41.058249 → 41.000000 (step: 1.0)
+2025-09-29 04:39:43,137 INFO:    💰 Notional: $59.40 | Min: $10
+2025-09-29 04:39:43,137 INFO: [PAPER] LONG 41.000000 XPL/USDT:USDT @ 1.448700
+2025-09-29 04:39:43,137 INFO: 🎯 ENTRY LONG XPL/USDT:USDT
+2025-09-29 04:39:43,137 INFO:    💰 Size: $59.46 | Risk: $0.48
+2025-09-29 04:39:43,137 INFO:    🎯 Entry: $1.448300 | Stop: 3.33%
+2025-09-29 04:39:43,137 INFO:    📈 Reason: 1m Reversal Long: RSI 31.3 + 2 green candles
+2025-09-29 04:39:43,137 INFO: 📊 Status: 8 open | Equity: $198.22
+2025-09-29 04:41:00,628 INFO: 📊 Status: 8 open | Equity: $198.22
+2025-09-29 04:42:07,248 INFO: 📊 Status: 8 open | Equity: $198.22
+2025-09-29 04:42:38,471 INFO: 🔴 CLOSE XPL/USDT:USDT long: initial_stop, PnL: $-0.49 (-0.83%)
+2025-09-29 04:43:25,517 INFO: 📊 Status: 7 open | Equity: $197.72
+💰 SCALPER CALC:
+   Equity: $197.72353999999996 | Risk: $1.9772353999999996
+   Position: $59.31706199999999 | Stop: 3.3%
+   Qty: 41.175248
+2025-09-29 04:44:43,614 INFO:    📊 Current price for XPL/USDT:USDT: $1.439100
+2025-09-29 04:44:47,583 INFO:    🔧 Quantity: 41.175248 → 41.000000 (step: 1.0)
+2025-09-29 04:44:47,583 INFO:    💰 Notional: $59.02 | Min: $10
+2025-09-29 04:44:47,583 INFO: [PAPER] LONG 41.000000 XPL/USDT:USDT @ 1.438400
+2025-09-29 04:44:47,583 INFO: 🎯 ENTRY LONG XPL/USDT:USDT
+2025-09-29 04:44:47,583 INFO:    💰 Size: $59.32 | Risk: $0.47
+2025-09-29 04:44:47,583 INFO:    🎯 Entry: $1.440600 | Stop: 3.33%
+2025-09-29 04:44:47,583 INFO:    📈 Reason: 1m Reversal Long: RSI 27.6 + 2 green candles
+2025-09-29 04:44:47,583 INFO: 📊 Status: 8 open | Equity: $197.72
+2025-09-29 04:46:17,993 INFO: 📊 Status: 8 open | Equity: $197.72
+2025-09-29 04:46:32,181 INFO: 🔴 CLOSE HYPE/USDT:USDT long: trailing_stop, PnL: $0.91 (1.50%)
+2025-09-29 04:46:50,351 INFO: 🔴 CLOSE XPL/USDT:USDT long: initial_stop, PnL: $-0.49 (-0.83%)
+2025-09-29 04:47:35,146 INFO: 📊 Status: 6 open | Equity: $198.14
+2025-09-29 04:47:51,433 INFO: 🚀 Trailing activated for ASTER/USDT:USDT @ 1.55%
+2025-09-29 04:48:02,903 INFO: 🔴 CLOSE ASTER/USDT:USDT long: initial_stop, PnL: $-0.54 (-0.89%)
+2025-09-29 04:48:46,847 INFO: 📊 Status: 5 open | Equity: $197.60
+2025-09-29 04:49:51,620 INFO: 📊 Status: 5 open | Equity: $197.60
+2025-09-29 04:50:55,796 INFO: 📊 Status: 5 open | Equity: $197.60
+💰 SCALPER CALC:
+   Equity: $197.60183999999995 | Risk: $1.9760183999999996
+   Position: $59.28055199999999 | Stop: 3.3%
+   Qty: 41.711618
+2025-09-29 04:51:42,286 INFO:    📊 Current price for XPL/USDT:USDT: $1.421600
+2025-09-29 04:51:46,585 INFO:    🔧 Quantity: 41.711618 → 42.000000 (step: 1.0)
+2025-09-29 04:51:46,585 INFO:    💰 Notional: $59.74 | Min: $10
+2025-09-29 04:51:46,585 INFO: [PAPER] LONG 42.000000 XPL/USDT:USDT @ 1.421600
+2025-09-29 04:51:46,585 INFO: 🎯 ENTRY LONG XPL/USDT:USDT
+2025-09-29 04:51:46,585 INFO:    💰 Size: $59.28 | Risk: $0.47
+2025-09-29 04:51:46,585 INFO:    🎯 Entry: $1.421200 | Stop: 3.33%
+2025-09-29 04:51:46,585 INFO:    📈 Reason: 1m Reversal Long: RSI 25.4 + 2 green candles
+2025-09-29 04:52:27,842 INFO: 📊 Status: 6 open | Equity: $197.60
+2025-09-29 04:53:47,959 INFO: 📊 Status: 6 open | Equity: $197.60
+2025-09-29 04:55:00,237 INFO: 📊 Status: 6 open | Equity: $197.60
+2025-09-29 04:56:08,201 INFO: 🔴 CLOSE XPL/USDT:USDT long: initial_stop, PnL: $-0.61 (-1.02%)
+2025-09-29 04:56:20,388 INFO: 📊 Status: 5 open | Equity: $196.99
+2025-09-29 04:57:22,954 INFO: 📊 Status: 5 open | Equity: $196.99
+2025-09-29 04:58:31,725 INFO: 📊 Status: 5 open | Equity: $196.99
+2025-09-29 04:59:46,568 INFO: 🔴 CLOSE ASTER/USDT:USDT short: trailing_stop, PnL: $1.38 (2.32%)
+2025-09-29 05:00:01,657 INFO: 📊 Status: 4 open | Equity: $198.37
+2025-09-29 05:01:03,277 INFO: 📊 Status: 4 open | Equity: $198.37
+2025-09-29 05:02:28,483 INFO: 📊 Status: 4 open | Equity: $198.37
+2025-09-29 05:03:29,769 INFO: 📊 Status: 4 open | Equity: $198.37
+💰 SCALPER CALC:
+   Equity: $198.36883999999995 | Risk: $1.9836883999999995
+   Position: $59.510651999999986 | Stop: 3.3%
+   Qty: 1.265188
+2025-09-29 05:04:36,834 INFO:    📊 Current price for HYPE/USDT:USDT: $47.047000
+2025-09-29 05:04:41,871 INFO:    🔧 Quantity: 1.265188 → 1.300000 (step: 0.1)
+2025-09-29 05:04:41,871 INFO:    💰 Notional: $61.16 | Min: $10
+2025-09-29 05:04:41,871 INFO: [PAPER] LONG 1.300000 HYPE/USDT:USDT @ 47.040000
+2025-09-29 05:04:41,871 INFO: 🎯 ENTRY LONG HYPE/USDT:USDT
+2025-09-29 05:04:41,871 INFO:    💰 Size: $59.51 | Risk: $0.48
+2025-09-29 05:04:41,871 INFO:    🎯 Entry: $47.037000 | Stop: 3.33%
+2025-09-29 05:04:41,871 INFO:    📈 Reason: 1m Reversal Long: RSI 22.0 + 2 green candles
+2025-09-29 05:04:41,871 INFO: 📊 Status: 5 open | Equity: $198.37
+💰 SCALPER CALC:
+   Equity: $198.36883999999995 | Risk: $1.9836883999999995
+   Position: $59.510651999999986 | Stop: 3.3%
+   Qty: 42.770341
+2025-09-29 05:05:20,765 INFO:    📊 Current price for XPL/USDT:USDT: $1.392500
+2025-09-29 05:05:25,688 INFO:    🔧 Quantity: 42.770341 → 43.000000 (step: 1.0)
+2025-09-29 05:05:25,688 INFO:    💰 Notional: $59.87 | Min: $10
+2025-09-29 05:05:25,688 INFO: [PAPER] LONG 43.000000 XPL/USDT:USDT @ 1.392400
+2025-09-29 05:05:25,688 INFO: 🎯 ENTRY LONG XPL/USDT:USDT
+2025-09-29 05:05:25,689 INFO:    💰 Size: $59.51 | Risk: $0.48
+2025-09-29 05:05:25,689 INFO:    🎯 Entry: $1.391400 | Stop: 3.33%
+2025-09-29 05:05:25,689 INFO:    📈 Reason: 1m Reversal Long: RSI 31.9 + 2 green candles
+💰 SCALPER CALC:
+   Equity: $198.36883999999995 | Risk: $1.9836883999999995
+   Position: $59.510651999999986 | Stop: 3.3%
+   Qty: 42.730417
+2025-09-29 05:06:18,760 INFO:    📊 Current price for XPL/USDT:USDT: $1.390900
+2025-09-29 05:06:21,657 INFO:    🔧 Quantity: 42.730417 → 43.000000 (step: 1.0)
+2025-09-29 05:06:21,657 INFO:    💰 Notional: $59.89 | Min: $10
+2025-09-29 05:06:21,657 INFO: [PAPER] LONG 43.000000 XPL/USDT:USDT @ 1.392100
+2025-09-29 05:06:21,657 INFO: 🎯 ENTRY LONG XPL/USDT:USDT
+2025-09-29 05:06:21,657 INFO:    💰 Size: $59.51 | Risk: $0.48
+2025-09-29 05:06:21,657 INFO:    🎯 Entry: $1.392700 | Stop: 3.33%
+2025-09-29 05:06:21,657 INFO:    📈 Reason: 1m Reversal Long: RSI 31.4 + 2 green candles
+2025-09-29 05:06:21,657 INFO: 📊 Status: 7 open | Equity: $198.37
+2025-09-29 05:07:29,666 INFO: 📊 Status: 7 open | Equity: $198.37
+2025-09-29 05:08:36,526 INFO: 📊 Status: 7 open | Equity: $198.37
+💰 SCALPER CALC:
+   Equity: $198.36883999999995 | Risk: $1.9836883999999995
+   Position: $59.510651999999986 | Stop: 3.3%
+   Qty: 1.265592
+2025-09-29 05:09:23,272 INFO:    📊 Current price for HYPE/USDT:USDT: $47.049000
+2025-09-29 05:09:26,262 INFO:    🔧 Quantity: 1.265592 → 1.300000 (step: 0.1)
+2025-09-29 05:09:26,262 INFO:    💰 Notional: $61.17 | Min: $10
+2025-09-29 05:09:26,262 INFO: [PAPER] LONG 1.300000 HYPE/USDT:USDT @ 47.037000
+2025-09-29 05:09:26,262 INFO: 🎯 ENTRY LONG HYPE/USDT:USDT
+2025-09-29 05:09:26,262 INFO:    💰 Size: $59.51 | Risk: $0.48
+2025-09-29 05:09:26,262 INFO:    🎯 Entry: $47.022000 | Stop: 3.33%
+2025-09-29 05:09:26,262 INFO:    📈 Reason: 1m Reversal Long: RSI 30.8 + 2 green candles
+2025-09-29 05:10:07,850 INFO: 📊 Status: 8 open | Equity: $198.37
+2025-09-29 05:11:17,316 INFO: 📊 Status: 8 open | Equity: $198.37
+2025-09-29 05:12:28,983 INFO: 📊 Status: 8 open | Equity: $198.37
+2025-09-29 05:13:43,190 INFO: 📊 Status: 8 open | Equity: $198.37
+2025-09-29 05:14:59,655 INFO: 📊 Status: 8 open | Equity: $198.37
+2025-09-29 05:15:51,209 INFO: 🚀 Trailing activated for MYX/USDT:USDT @ 1.55%
+2025-09-29 05:16:07,507 INFO: 📊 Status: 8 open | Equity: $198.37
+2025-09-29 05:17:12,955 INFO: 📊 Status: 8 open | Equity: $198.37
+2025-09-29 05:18:14,311 INFO: 📊 Status: 8 open | Equity: $198.37
+2025-09-29 05:19:19,687 INFO: 📊 Status: 8 open | Equity: $198.37
+2025-09-29 05:20:09,003 INFO: 🔴 CLOSE MYX/USDT:USDT long: trailing_stop, PnL: $0.75 (1.26%)
+2025-09-29 05:20:25,675 INFO: 📊 Status: 7 open | Equity: $199.12
+2025-09-29 05:20:47,785 INFO: 🔴 CLOSE XPL/USDT:USDT long: initial_stop, PnL: $-0.49 (-0.81%)
+2025-09-29 05:20:50,433 INFO: 🔴 CLOSE XPL/USDT:USDT long: initial_stop, PnL: $-0.49 (-0.81%)
+2025-09-29 05:21:20,172 INFO: 🔴 CLOSE MYX/USDT:USDT short: initial_stop, PnL: $-0.52 (-0.88%)
+2025-09-29 05:21:36,258 INFO: 📊 Status: 4 open | Equity: $197.63
+2025-09-29 05:22:38,217 INFO: 📊 Status: 4 open | Equity: $197.63
+2025-09-29 05:24:09,770 INFO: 📊 Status: 4 open | Equity: $197.63
+2025-09-29 05:25:36,132 INFO: 📊 Status: 4 open | Equity: $197.63
+2025-09-29 05:26:38,006 INFO: 📊 Status: 4 open | Equity: $197.63
+2025-09-29 05:28:07,823 INFO: 📊 Status: 4 open | Equity: $197.63
+2025-09-29 05:29:08,758 INFO: 📊 Status: 4 open | Equity: $197.63
+2025-09-29 05:30:15,597 INFO: 📊 Status: 4 open | Equity: $197.63
+2025-09-29 05:31:35,203 INFO: 📊 Status: 4 open | Equity: $197.63
+2025-09-29 05:33:04,323 INFO: 📊 Status: 4 open | Equity: $197.63
+2025-09-29 05:34:16,594 INFO: 📊 Status: 4 open | Equity: $197.63
+2025-09-29 05:35:40,612 INFO: 📊 Status: 4 open | Equity: $197.63
+💰 SCALPER CALC:
+   Equity: $197.63367999999997 | Risk: $1.9763367999999997
+   Position: $59.29010399999999 | Stop: 3.3%
+   Qty: 32.328301
+2025-09-29 05:36:18,262 INFO:    📊 Current price for ASTER/USDT:USDT: $1.833000
+2025-09-29 05:36:20,914 INFO:    🔧 Quantity: 32.328301 → 32.000000 (step: 1.0)
+2025-09-29 05:36:20,914 INFO:    💰 Notional: $58.65 | Min: $10
+2025-09-29 05:36:20,914 INFO: [PAPER] SHORT 32.000000 ASTER/USDT:USDT @ 1.833300
+2025-09-29 05:36:20,914 INFO: 🎯 ENTRY SHORT ASTER/USDT:USDT
+2025-09-29 05:36:20,914 INFO:    💰 Size: $59.29 | Risk: $0.47
+2025-09-29 05:36:20,914 INFO:    🎯 Entry: $1.834000 | Stop: 3.33%
+2025-09-29 05:36:20,914 INFO:    📈 Reason: 1m Reversal Short: RSI 70.5 + 2 red candles
+2025-09-29 05:36:55,119 INFO: 📊 Status: 5 open | Equity: $197.63
+2025-09-29 05:37:58,435 INFO: 📊 Status: 5 open | Equity: $197.63
+2025-09-29 05:39:28,402 INFO: 📊 Status: 5 open | Equity: $197.63
+2025-09-29 05:41:01,476 INFO: 📊 Status: 5 open | Equity: $197.63
+2025-09-29 05:42:29,624 INFO: 📊 Status: 5 open | Equity: $197.63
+2025-09-29 05:43:31,876 INFO: 📊 Status: 5 open | Equity: $197.63
+💰 SCALPER CALC:
+   Equity: $197.63367999999997 | Risk: $1.9763367999999997
+   Position: $59.29010399999999 | Stop: 3.3%
+   Qty: 32.189643
+2025-09-29 05:44:13,117 INFO:    📊 Current price for ASTER/USDT:USDT: $1.841300
+2025-09-29 05:44:16,409 INFO:    🔧 Quantity: 32.189643 → 32.000000 (step: 1.0)
+2025-09-29 05:44:16,409 INFO:    💰 Notional: $58.91 | Min: $10
+2025-09-29 05:44:16,409 INFO: [PAPER] SHORT 32.000000 ASTER/USDT:USDT @ 1.841600
+2025-09-29 05:44:16,409 INFO: 🎯 ENTRY SHORT ASTER/USDT:USDT
+2025-09-29 05:44:16,409 INFO:    💰 Size: $59.29 | Risk: $0.47
+2025-09-29 05:44:16,409 INFO:    🎯 Entry: $1.841900 | Stop: 3.33%
+2025-09-29 05:44:16,409 INFO:    📈 Reason: 1m Reversal Short: RSI 74.8 + 2 red candles
+2025-09-29 05:44:47,764 INFO: 📊 Status: 6 open | Equity: $197.63
+2025-09-29 05:46:04,725 INFO: 📊 Status: 6 open | Equity: $197.63
+2025-09-29 05:47:15,024 INFO: 📊 Status: 6 open | Equity: $197.63
+2025-09-29 05:48:25,208 INFO: 📊 Status: 6 open | Equity: $197.63
+2025-09-29 05:49:29,711 INFO: 📊 Status: 6 open | Equity: $197.63
+2025-09-29 05:50:34,545 INFO: 📊 Status: 6 open | Equity: $197.63
+2025-09-29 05:51:43,363 INFO: 📊 Status: 6 open | Equity: $197.63
+2025-09-29 05:52:52,874 INFO: 📊 Status: 6 open | Equity: $197.63
+2025-09-29 05:53:45,902 INFO: 🔴 CLOSE ASTER/USDT:USDT short: initial_stop, PnL: $-0.62 (-1.06%)
+2025-09-29 05:53:59,230 INFO: 📊 Status: 5 open | Equity: $197.01
+2025-09-29 05:55:01,250 INFO: 📊 Status: 5 open | Equity: $197.01
+2025-09-29 05:56:14,119 INFO: 📊 Status: 5 open | Equity: $197.01
+2025-09-29 05:57:29,604 INFO: 📊 Status: 5 open | Equity: $197.01
+2025-09-29 05:58:31,965 INFO: 📊 Status: 5 open | Equity: $197.01
+2025-09-29 06:00:02,188 INFO: 📊 Status: 5 open | Equity: $197.01
+2025-09-29 06:01:00,727 INFO: 🔴 CLOSE ASTER/USDT:USDT short: initial_stop, PnL: $-0.52 (-0.88%)
+2025-09-29 06:01:13,730 INFO: 📊 Status: 4 open | Equity: $196.49
+2025-09-29 06:02:14,128 INFO: 📊 Status: 4 open | Equity: $196.49
+2025-09-29 06:03:14,370 INFO: 📊 Status: 4 open | Equity: $196.49
+💰 SCALPER CALC:
+   Equity: $196.49127999999996 | Risk: $1.9649127999999996
+   Position: $58.947383999999985 | Stop: 3.3%
+   Qty: 3.681037
+2025-09-29 06:04:24,007 INFO:    📊 Current price for MYX/USDT:USDT: $16.005000
+2025-09-29 06:04:26,414 INFO:    🔧 Quantity: 3.681037 → 3.700000 (step: 0.1)
+2025-09-29 06:04:26,415 INFO:    💰 Notional: $59.20 | Min: $10
+2025-09-29 06:04:26,415 INFO: [PAPER] SHORT 3.700000 MYX/USDT:USDT @ 16.006000
+2025-09-29 06:04:26,415 INFO: 🎯 ENTRY SHORT MYX/USDT:USDT
+2025-09-29 06:04:26,415 INFO:    💰 Size: $58.95 | Risk: $0.47
+2025-09-29 06:04:26,415 INFO:    🎯 Entry: $16.013800 | Stop: 3.33%
+2025-09-29 06:04:26,415 INFO:    📈 Reason: 1m Reversal Short: RSI 70.3 + 2 red candles
+2025-09-29 06:04:26,415 INFO: 📊 Status: 5 open | Equity: $196.49
+2025-09-29 06:05:33,027 INFO: 📊 Status: 5 open | Equity: $196.49
+2025-09-29 06:06:26,339 INFO: 🔴 CLOSE MYX/USDT:USDT short: initial_stop, PnL: $-0.79 (-1.33%)
+2025-09-29 06:06:34,042 INFO: 📊 Status: 4 open | Equity: $195.71
+2025-09-29 06:08:00,777 INFO: 📊 Status: 4 open | Equity: $195.71
+2025-09-29 06:09:17,883 INFO: 📊 Status: 4 open | Equity: $195.71
+2025-09-29 06:10:42,459 INFO: 📊 Status: 4 open | Equity: $195.71
+2025-09-29 06:12:13,534 INFO: 📊 Status: 4 open | Equity: $195.71
+2025-09-29 06:13:42,164 INFO: 📊 Status: 4 open | Equity: $195.71
+2025-09-29 06:15:01,353 INFO: 📊 Status: 4 open | Equity: $195.71
+💰 SCALPER CALC:
+   Equity: $195.70576999999997 | Risk: $1.9570576999999998
+   Position: $58.71173099999999 | Stop: 3.3%
+   Qty: 42.126520
+2025-09-29 06:16:15,314 INFO:    📊 Current price for XPL/USDT:USDT: $1.394400
+2025-09-29 06:16:18,284 INFO:    🔧 Quantity: 42.126520 → 42.000000 (step: 1.0)
+2025-09-29 06:16:18,284 INFO:    💰 Notional: $58.57 | Min: $10
+2025-09-29 06:16:18,284 INFO: [PAPER] LONG 42.000000 XPL/USDT:USDT @ 1.394400
+2025-09-29 06:16:18,284 INFO: 🎯 ENTRY LONG XPL/USDT:USDT
+2025-09-29 06:16:18,284 INFO:    💰 Size: $58.71 | Risk: $0.47
+2025-09-29 06:16:18,284 INFO:    🎯 Entry: $1.393700 | Stop: 3.33%
+2025-09-29 06:16:18,284 INFO:    📈 Reason: 1m Reversal Long: RSI 28.4 + 2 green candles
+2025-09-29 06:16:18,284 INFO: 📊 Status: 5 open | Equity: $195.71
+2025-09-29 06:17:21,109 INFO: 📊 Status: 5 open | Equity: $195.71
+2025-09-29 06:18:31,335 INFO: 📊 Status: 5 open | Equity: $195.71
+2025-09-29 06:19:42,365 INFO: 📊 Status: 5 open | Equity: $195.71
+2025-09-29 06:20:51,009 INFO: 📊 Status: 5 open | Equity: $195.71
+💰 SCALPER CALC:
+   Equity: $195.70576999999997 | Risk: $1.9570576999999998
+   Position: $58.71173099999999 | Stop: 3.3%
+   Qty: 31.113795
+2025-09-29 06:22:38,008 INFO:    📊 Current price for ASTER/USDT:USDT: $1.888500
+2025-09-29 06:22:40,754 INFO:    🔧 Quantity: 31.113795 → 31.000000 (step: 1.0)
+2025-09-29 06:22:40,754 INFO:    💰 Notional: $58.56 | Min: $10
+2025-09-29 06:22:40,754 INFO: [PAPER] SHORT 31.000000 ASTER/USDT:USDT @ 1.887200
+2025-09-29 06:22:40,754 INFO: 🎯 ENTRY SHORT ASTER/USDT:USDT
+2025-09-29 06:22:40,754 INFO:    💰 Size: $58.71 | Risk: $0.47
+2025-09-29 06:22:40,754 INFO:    🎯 Entry: $1.887000 | Stop: 3.33%
+2025-09-29 06:22:40,754 INFO:    📈 Reason: 1m Reversal Short: RSI 91.0 + 2 red candles
+2025-09-29 06:22:40,754 INFO: 📊 Status: 6 open | Equity: $195.71
+💰 SCALPER CALC:
+   Equity: $195.70576999999997 | Risk: $1.9570576999999998
+   Position: $58.71173099999999 | Stop: 3.3%
+   Qty: 31.171612
+2025-09-29 06:23:20,538 INFO:    📊 Current price for ASTER/USDT:USDT: $1.884300
+2025-09-29 06:23:23,352 INFO:    🔧 Quantity: 31.171612 → 31.000000 (step: 1.0)
+2025-09-29 06:23:23,352 INFO:    💰 Notional: $58.40 | Min: $10
+2025-09-29 06:23:23,353 INFO: [PAPER] SHORT 31.000000 ASTER/USDT:USDT @ 1.884000
+2025-09-29 06:23:23,353 INFO: 🎯 ENTRY SHORT ASTER/USDT:USDT
+2025-09-29 06:23:23,353 INFO:    💰 Size: $58.71 | Risk: $0.47
+2025-09-29 06:23:23,353 INFO:    🎯 Entry: $1.883500 | Stop: 3.33%
+2025-09-29 06:23:23,353 INFO:    📈 Reason: 1m Reversal Short: RSI 84.9 + 2 red candles
+2025-09-29 06:24:09,888 INFO: 📊 Status: 7 open | Equity: $195.71
+2025-09-29 06:25:16,119 INFO: 📊 Status: 7 open | Equity: $195.71
+2025-09-29 06:26:25,943 INFO: 📊 Status: 7 open | Equity: $195.71
+2025-09-29 06:27:30,816 INFO: 📊 Status: 7 open | Equity: $195.71
+2025-09-29 06:28:49,205 INFO: 📊 Status: 7 open | Equity: $195.71
+2025-09-29 06:30:05,797 INFO: 📊 Status: 7 open | Equity: $195.71
+2025-09-29 06:31:18,360 INFO: 📊 Status: 7 open | Equity: $195.71
+2025-09-29 06:31:47,106 INFO: 🔴 CLOSE ASTER/USDT:USDT short: initial_stop, PnL: $-0.54 (-0.93%)
+2025-09-29 06:32:25,609 INFO: 🔴 CLOSE ASTER/USDT:USDT short: initial_stop, PnL: $-0.58 (-0.99%)
+2025-09-29 06:32:35,351 INFO: 📊 Status: 5 open | Equity: $194.58
+2025-09-29 06:33:36,560 INFO: 📊 Status: 5 open | Equity: $194.58
+2025-09-29 06:34:38,985 INFO: 📊 Status: 5 open | Equity: $194.58
+2025-09-29 06:35:49,306 INFO: 📊 Status: 5 open | Equity: $194.58
+2025-09-29 06:36:52,441 INFO: 📊 Status: 5 open | Equity: $194.58
+2025-09-29 06:38:21,180 INFO: 📊 Status: 5 open | Equity: $194.58
+2025-09-29 06:39:24,332 INFO: 📊 Status: 5 open | Equity: $194.58
+2025-09-29 06:40:33,642 INFO: 📊 Status: 5 open | Equity: $194.58
+2025-09-29 06:41:36,924 INFO: 📊 Status: 5 open | Equity: $194.58
+2025-09-29 06:42:37,953 INFO: 📊 Status: 5 open | Equity: $194.58
+2025-09-29 06:43:40,343 INFO: 📊 Status: 5 open | Equity: $194.58
+2025-09-29 06:45:13,643 INFO: 📊 Status: 5 open | Equity: $194.58
+2025-09-29 06:46:24,814 INFO: 📊 Status: 5 open | Equity: $194.58
+💰 SCALPER CALC:
+   Equity: $194.58356999999998 | Risk: $1.9458357
+   Position: $58.375071 | Stop: 3.3%
+   Qty: 3.592599
+2025-09-29 06:47:10,380 INFO:    📊 Current price for MYX/USDT:USDT: $16.272200
+2025-09-29 06:47:12,832 INFO:    🔧 Quantity: 3.592599 → 3.600000 (step: 0.1)
+2025-09-29 06:47:12,832 INFO:    💰 Notional: $58.59 | Min: $10
+2025-09-29 06:47:12,832 INFO: [PAPER] SHORT 3.600000 MYX/USDT:USDT @ 16.270600
+2025-09-29 06:47:12,832 INFO: 🎯 ENTRY SHORT MYX/USDT:USDT
+2025-09-29 06:47:12,832 INFO:    💰 Size: $58.38 | Risk: $0.47
+2025-09-29 06:47:12,832 INFO:    🎯 Entry: $16.248700 | Stop: 3.33%
+2025-09-29 06:47:12,832 INFO:    📈 Reason: 1m Reversal Short: RSI 69.3 + 2 red candles
+2025-09-29 06:47:44,495 INFO: 📊 Status: 6 open | Equity: $194.58
+2025-09-29 06:49:07,000 INFO: 📊 Status: 6 open | Equity: $194.58
+2025-09-29 06:50:22,891 INFO: 📊 Status: 6 open | Equity: $194.58
+2025-09-29 06:51:34,650 INFO: 📊 Status: 6 open | Equity: $194.58
+2025-09-29 06:52:48,115 INFO: 📊 Status: 6 open | Equity: $194.58
+2025-09-29 06:53:49,092 INFO: 🚀 Trailing activated for MYX/USDT:USDT @ 1.60%
+2025-09-29 06:54:00,326 INFO: 📊 Status: 6 open | Equity: $194.58
+2025-09-29 06:55:25,652 INFO: 📊 Status: 6 open | Equity: $194.58
+2025-09-29 06:56:39,842 INFO: 📊 Status: 6 open | Equity: $194.58
+2025-09-29 06:57:51,260 INFO: 📊 Status: 6 open | Equity: $194.58
+2025-09-29 06:58:53,192 INFO: 📊 Status: 6 open | Equity: $194.58
+2025-09-29 07:00:05,377 INFO: 📊 Status: 6 open | Equity: $194.58
+💰 SCALPER CALC:
+   Equity: $194.58356999999998 | Risk: $1.9458357
+   Position: $58.375071 | Stop: 3.3%
+   Qty: 41.634028
+2025-09-29 07:01:25,320 INFO:    📊 Current price for XPL/USDT:USDT: $1.401100
+2025-09-29 07:01:29,811 INFO:    🔧 Quantity: 41.634028 → 42.000000 (step: 1.0)
+2025-09-29 07:01:29,811 INFO:    💰 Notional: $58.87 | Min: $10
+2025-09-29 07:01:29,811 INFO: [PAPER] SHORT 42.000000 XPL/USDT:USDT @ 1.401200
+2025-09-29 07:01:29,811 INFO: 🎯 ENTRY SHORT XPL/USDT:USDT
+2025-09-29 07:01:29,811 INFO:    💰 Size: $58.38 | Risk: $0.47
+2025-09-29 07:01:29,811 INFO:    🎯 Entry: $1.402100 | Stop: 3.33%
+2025-09-29 07:01:29,811 INFO:    📈 Reason: 1m Reversal Short: RSI 68.1 + 2 red candles
+2025-09-29 07:01:29,811 INFO: 📊 Status: 7 open | Equity: $194.58
+💰 SCALPER CALC:
+   Equity: $194.58356999999998 | Risk: $1.9458357
+   Position: $58.375071 | Stop: 3.3%
+   Qty: 3.660177
+2025-09-29 07:02:15,546 INFO:    📊 Current price for MYX/USDT:USDT: $15.949600
+2025-09-29 07:02:18,006 INFO:    🔧 Quantity: 3.660177 → 3.700000 (step: 0.1)
+2025-09-29 07:02:18,006 INFO:    💰 Notional: $59.08 | Min: $10
+2025-09-29 07:02:18,006 INFO: [PAPER] LONG 3.700000 MYX/USDT:USDT @ 15.947300
+2025-09-29 07:02:18,006 INFO: 🎯 ENTRY LONG MYX/USDT:USDT
+2025-09-29 07:02:18,006 INFO:    💰 Size: $58.38 | Risk: $0.47
+2025-09-29 07:02:18,006 INFO:    🎯 Entry: $15.948700 | Stop: 3.33%
+2025-09-29 07:02:18,006 INFO:    📈 Reason: 1m Reversal Long: RSI 24.0 + 2 green candles
+2025-09-29 07:02:44,286 INFO: 🔴 CLOSE MYX/USDT:USDT short: trailing_stop, PnL: $1.11 (1.90%)
+💰 SCALPER CALC:
+   Equity: $195.69669 | Risk: $1.9569668999999998
+   Position: $58.709007 | Stop: 3.3%
+   Qty: 3.681900
+2025-09-29 07:03:07,085 INFO:    📊 Current price for MYX/USDT:USDT: $15.947500
+2025-09-29 07:03:09,800 INFO:    🔧 Quantity: 3.681900 → 3.700000 (step: 0.1)
+2025-09-29 07:03:09,800 INFO:    💰 Notional: $58.97 | Min: $10
+2025-09-29 07:03:09,800 INFO: [PAPER] LONG 3.700000 MYX/USDT:USDT @ 15.944100
+2025-09-29 07:03:09,800 INFO: 🎯 ENTRY LONG MYX/USDT:USDT
+2025-09-29 07:03:09,800 INFO:    💰 Size: $58.71 | Risk: $0.47
+2025-09-29 07:03:09,800 INFO:    🎯 Entry: $15.945300 | Stop: 3.33%
+2025-09-29 07:03:09,800 INFO:    📈 Reason: 1m Reversal Long: RSI 26.4 + 2 green candles
+2025-09-29 07:03:09,800 INFO: 📊 Status: 8 open | Equity: $195.70
+2025-09-29 07:04:31,292 INFO: 📊 Status: 8 open | Equity: $195.70
+2025-09-29 07:05:04,207 INFO: 🔴 CLOSE MYX/USDT:USDT long: initial_stop, PnL: $-0.48 (-0.82%)
+2025-09-29 07:05:51,246 INFO: 📊 Status: 7 open | Equity: $195.21
+💰 SCALPER CALC:
+   Equity: $195.21273 | Risk: $1.9521273
+   Position: $58.563818999999995 | Stop: 3.3%
+   Qty: 30.144029
+2025-09-29 07:06:40,544 INFO:    📊 Current price for ASTER/USDT:USDT: $1.943600
+2025-09-29 07:06:42,974 INFO:    🔧 Quantity: 30.144029 → 30.000000 (step: 1.0)
+2025-09-29 07:06:42,974 INFO:    💰 Notional: $58.31 | Min: $10
+2025-09-29 07:06:42,974 INFO: [PAPER] SHORT 30.000000 ASTER/USDT:USDT @ 1.943600
+2025-09-29 07:06:42,974 INFO: 🎯 ENTRY SHORT ASTER/USDT:USDT
+2025-09-29 07:06:42,974 INFO:    💰 Size: $58.56 | Risk: $0.47
+2025-09-29 07:06:42,974 INFO:    🎯 Entry: $1.942800 | Stop: 3.33%
+2025-09-29 07:06:42,974 INFO:    📈 Reason: 1m Reversal Short: RSI 80.9 + 2 red candles
+2025-09-29 07:07:24,370 INFO: 📊 Status: 8 open | Equity: $195.21

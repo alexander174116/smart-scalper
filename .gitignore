@@ -1,0 +1,23 @@
+# Virtual environment
+venv/
+.env
+
+# Logs
+*.log
+trades_log.csv
+
+# Old files
+old/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
