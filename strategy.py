@@ -14,13 +14,144 @@ logger = logging.getLogger(__name__)
 
 class EntryStrategy(Enum):
     SMART_MOMENTUM = "smart_momentum"
-    VOLUME_SURGE = "volume_surge"
+    VOLUME_SURGE = "volume_surge" 
+    BREAKOUT_FAKE = "breakout_fake"
+    ALGO_HUNTER = "algo_hunter"  # ← ДОБАВИТЬ
 
 class SmartAntiCrowdStrategy:
     def __init__(self, client: ScalperProClient, cfg: Config):
         self.client = client
         self.cfg = cfg
         self.entry_strategy = EntryStrategy(cfg.entry_strategy)
+
+    def analyze_algo_hunter(self, symbol: str, df: pd.DataFrame) -> Optional[Dict]:
+        """
+        Охотник за алгоритмами - ловим моменты слома паттернов
+        """
+        if len(df) < 50:
+            return None
+
+        closes = df['close'].values
+        highs = df['high'].values  
+        lows = df['low'].values
+        volumes = df['volume'].values
+        
+        # 1. Базовые индикаторы
+        rsi_val = rsi(closes, 14)
+        sma_20 = np.mean(closes[-20:])
+        sma_50 = np.mean(closes[-50:])
+        
+        # 2. Volume анализ
+        volume_surge = volumes[-1] > np.mean(volumes[-20:]) * 2
+        volume_decline = volumes[-1] < np.mean(volumes[-20:]) * 0.5
+        
+        # 3. Волатильность
+        atr_val = calculate_atr(highs, lows, closes, self.cfg.atr_period)
+        current_range = highs[-1] - lows[-1]
+        high_volatility = current_range > atr_val * 1.5 if atr_val > 0 else False
+        
+        # 4. Price Action паттерны
+        hammer = is_hammer(highs, lows, closes)
+        shooting_star = is_shooting_star(highs, lows, closes)
+        inside_bar = is_inside_bar(highs, lows)
+        
+        # 5. Liquidity зоны
+        support, resistance = find_liquidity_zones(highs, lows, closes)
+        near_support = abs(closes[-1] - support) / closes[-1] < 0.005
+        near_resistance = abs(closes[-1] - resistance) / closes[-1] < 0.005
+        
+        # 🎯 СИГНАЛЫ ПРОТИВ АЛГОРИТМОВ:
+        
+        # Сигнал 1: Ложный пробой + volume surge
+        if (self.is_fake_breakout(highs, lows, closes) and volume_surge and 
+            high_volatility and near_resistance):
+            return {
+                'side': 'short',
+                'symbol': symbol, 
+                'reason': 'Algo Short: Fake breakout + volume surge + resistance',
+                'confidence': 0.8
+            }
+        
+        # Сигнал 2: Панические продажи + поддержка
+        if (rsi_val < 25 and volume_surge and near_support and 
+            closes[-1] > sma_20 and hammer):
+            return {
+                'side': 'long',
+                'symbol': symbol,
+                'reason': 'Algo Long: Oversold panic + support + hammer',
+                'confidence': 0.85
+            }
+        
+        # Сигнал 3: Тихий накопление перед движением
+        if (volume_decline and near_support and 
+            is_compression(highs, lows, self.cfg.compression_period) and rsi_val < 40):
+            return {
+                'side': 'long', 
+                'symbol': symbol,
+                'reason': 'Algo Long: Accumulation + compression + support',
+                'confidence': 0.75
+            }
+        
+        # Сигнал 4: Distribution на вершине
+        if (volume_decline and near_resistance and
+            is_compression(highs, lows, self.cfg.compression_period) and rsi_val > 60 and shooting_star):
+            return {
+                'side': 'short',
+                'symbol': symbol, 
+                'reason': 'Algo Short: Distribution + compression + resistance',
+                'confidence': 0.75
+            }
+
+        return None
+
+    def is_fake_breakout(self, highs, lows, closes, lookback=10):
+        """Определение ложного пробоя"""
+        if len(highs) < lookback + 1:
+            return False
+            
+        # Пробой вверх но закрытие внутри диапазона
+        if highs[-1] > max(highs[-lookback:-1]) and closes[-1] < closes[-2]:
+            return True
+            
+        # Пробой вниз но закрытие внутри диапазона  
+        if lows[-1] < min(lows[-lookback:-1]) and closes[-1] > closes[-2]:
+            return True
+            
+        return False
+
+    def circus_arbitrage_signals(self, symbol: str, df: pd.DataFrame):
+        """
+        Ловим моменты когда алгоритмы создают цирк на рынке
+        """
+        closes = df['close'].values
+        volumes = df['volume'].values
+        
+        # 1. "Паника" - резкий объем на небольшом движении
+        recent_volume = np.mean(volumes[-3:])
+        avg_volume = np.mean(volumes[-20:])
+        price_change = abs(closes[-1] - closes[-3]) / closes[-3]
+        
+        panic_signal = (recent_volume > avg_volume * 3 and 
+                       price_change < 0.02)  # большой объем на маленьком движении
+        
+        # 2. "Затишье перед бурей" - низкий объем перед движением
+        calm_signal = (recent_volume < avg_volume * 0.7 and 
+                      is_compression(df['high'].values, df['low'].values))
+        
+        # 3. "Отскок от ликвидности" - быстрая реакция от ключевых уровней
+        support, resistance = find_liquidity_zones(df['high'].values, df['low'].values, closes)
+        near_level = min(abs(closes[-1] - support), abs(closes[-1] - resistance)) / closes[-1] < 0.003
+        
+        if panic_signal and near_level:
+            direction = 'long' if closes[-1] > closes[-2] else 'short'
+            return {
+                'side': direction,
+                'symbol': symbol,
+                'reason': f'Circus Arb: Panic {direction} near liquidity level',
+                'confidence': 0.7
+            }
+        
+        return None
         
     def multi_timeframe_analysis(self, symbol: str) -> Tuple[str, float]:
         """Мультитаймфрейм анализ"""
@@ -113,15 +244,20 @@ class SmartAntiCrowdStrategy:
         return None
 
     def analyze_symbol(self, symbol: str) -> Optional[Dict]:
-        """Главный анализ символа"""
+        """Главный анализ символа с выбранной стратегией"""
         data = self.client.fetch_ohlcv(symbol, self.cfg.timeframe, limit=100)
         if len(data) < 50:
             return None
 
         df = pd.DataFrame(data, columns=['timestamp', 'open', 'high', 'low', 'close', 'volume'])
         
+        # Выбор стратегии входа
         if self.entry_strategy == EntryStrategy.SMART_MOMENTUM:
             signal = self.analyze_smart_momentum(symbol, df)
+        elif self.entry_strategy == EntryStrategy.VOLUME_SURGE:
+            signal = self.analyze_volume_surge(symbol, df)
+        elif self.entry_strategy == EntryStrategy.ALGO_HUNTER:  # ← ДОБАВИТЬ
+            signal = self.analyze_algo_hunter(symbol, df)
         else:
             signal = self.analyze_smart_momentum(symbol, df)
             

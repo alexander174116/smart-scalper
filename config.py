@@ -37,6 +37,17 @@ class Config:
     max_volatility: float
     trend_filter: bool
     position_multiplier: int
+    tf_context: str
+    use_volume_profile: bool
+    use_orderbook: bool
+    use_market_depth: bool
+    rsi_divergence: bool
+    volume_analysis: bool
+    price_action: bool
+    liquidity_zones: bool
+    momentum_filter: bool
+    atr_period: int
+    compression_period: int
 
 def load_config() -> Config:
     with open("config.yaml", "r") as f:

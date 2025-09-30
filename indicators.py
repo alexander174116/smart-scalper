@@ -76,3 +76,67 @@ def calculate_quantity(equity: float, risk_percent: float, stop_percent: float,
     print(f"   Qty: {quantity:.6f}")
     
     return position_size, quantity, actual_stop
+
+def calculate_atr(highs, lows, closes, period=14):
+    """Average True Range"""
+    if len(highs) < period + 1:
+        return 0
+    
+    tr = []
+    for i in range(1, len(highs)):
+        tr1 = highs[i] - lows[i]
+        tr2 = abs(highs[i] - closes[i-1])
+        tr3 = abs(lows[i] - closes[i-1])
+        tr.append(max(tr1, tr2, tr3))
+    
+    return np.mean(tr[-period:]) if tr else 0
+
+def is_hammer(highs, lows, closes, lookback=3):
+    """Определение молота"""
+    if len(closes) < lookback + 1:
+        return False
+    
+    body = abs(closes[-1] - closes[-2])
+    lower_wick = min(closes[-1], closes[-2]) - lows[-1]
+    upper_wick = highs[-1] - max(closes[-1], closes[-2])
+    
+    return lower_wick > body * 2 and upper_wick < body * 0.5
+
+def is_shooting_star(highs, lows, closes, lookback=3):
+    """Определение падающей звезды"""
+    if len(closes) < lookback + 1:
+        return False
+    
+    body = abs(closes[-1] - closes[-2])
+    upper_wick = highs[-1] - max(closes[-1], closes[-2])
+    lower_wick = min(closes[-1], closes[-2]) - lows[-1]
+    
+    return upper_wick > body * 2 and lower_wick < body * 0.5
+
+def is_inside_bar(highs, lows):
+    """Внутренний бар"""
+    if len(highs) < 2:
+        return False
+    return highs[-1] <= highs[-2] and lows[-1] >= lows[-2]
+
+def is_compression(highs, lows, period=5):
+    """Сжатие волатильности"""
+    if len(highs) < period:
+        return False
+    
+    ranges = [highs[i] - lows[i] for i in range(-period, 0)]
+    current_range = ranges[-1]
+    avg_range = np.mean(ranges[:-1])
+    
+    return current_range < avg_range * 0.7
+
+def find_liquidity_zones(highs, lows, closes, period=20):
+    """Поиск зон ликвидности (поддержка/сопротивление)"""
+    if len(closes) < period:
+        return closes[-1] * 0.95, closes[-1] * 1.05
+    
+    # Простой метод - пики и впадины
+    support = min(lows[-period:])
+    resistance = max(highs[-period:])
+    
+    return support, resistance

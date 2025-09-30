@@ -2,6 +2,32 @@
 mode: paper              #paper or live
 exchange_id: bybit
 
+entry_strategy: "algo_hunter"
+
+# Мультитаймфрейм анализ
+multi_timeframe: true
+tf_primary: 1m
+tf_confirmation: 3m
+tf_context: 15m
+
+# Расширенные индикаторы
+use_volume_profile: true
+use_orderbook: false  # для paper пока выключим
+use_market_depth: false
+
+# Фильтры
+min_volume_ratio: 2.0
+max_volatility: 0.08
+trend_filter: true
+momentum_filter: true
+
+# Новые параметры
+rsi_divergence: true
+volume_analysis: true
+price_action: true
+liquidity_zones: true
+atr_period: 14
+compression_period: 5
 # Мультимонетный мониторинг
 symbols:
   - MYX/USDT:USDT
@@ -34,15 +60,6 @@ rsi_period: 14            # стандартный период
 rsi_overbought: 65        # БОЛЕЕ ЧУВСТВИТЕЛЬНЫЙ!
 rsi_oversold: 35          # БОЛЕЕ ЧУВСТВИТЕЛЬНЫЙ!
 volume_multiplier: 1.5    # фильтр объема
-
-# Улучшенная стратегия входа
-entry_strategy: "smart_momentum"
-multi_timeframe: true     # отключим для скорости
-tf_primary: 1m
-tf_confirmation: 5m
-min_volume_ratio: 1.3     # менее строгий фильтр
-max_volatility: 0.05      # более волатильные рынки
-trend_filter: true       # отключим для больше сигналов
 
 # Лимиты
 max_open_trades: 10         # Макс 3 сделки
